@@ -1,0 +1,23 @@
+Subject: [REMINDER] Weekly IRC meeting, Wednesday (tomorrow) at 20:00 GMT
+
+Dear community,
+
+Please join our weekly IRC meeting, Wednesday (tomorrow) at 20:00 GMT.
+
+Everyone is welcome to attend this meeting.
+
+If you have anything to put on the agenda, please reply to this email or mention it at the start of the meeting.
+
+The meeting will take place in:
+
+    irc://irc.freenode.net/couchdb-meeting
+
+You can access the meeting via the web:
+
+    http://webchat.freenode.net/?channels=#couchdb-meeting
+
+For your local time, see:
+
+    http://everytimezone.com/
+
+Thanks,

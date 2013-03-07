@@ -1,0 +1,19 @@
+Subject: [DISCUSS] Release Apache CouchDB %version%
+
+Dear community,
+
+I would like to propose that we release Apache CouchDB %version%.
+
+The project aims to produce time-based releases. If your favourite feature is not ready for this version, it can be included in the next version. However, if you know of anything that should block the release, please speak up now.
+
+The %version% NEWS entry as it stands:
+
+%news%
+
+The %version% CHANGES entry as it stands:
+
+    %changes%
+
+Are these accurate? Please double check any work you may have done and make sure that the corresponding NEWS and CHANGES entries are up-to-date.
+
+Thanks,

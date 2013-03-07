@@ -1,0 +1,27 @@
+Subject: [VOTE] Release Apache CouchDB %version%-rc.%candidate%
+
+Dear community,
+
+I would like to call a vote on Apache CouchDB %version%-rc.%candidate%.
+
+Changes since last round:
+
+ * [LIST CHANGES]
+
+We encourage the whole community to download and test these release artefacts so that any critical issues can be resolved before the release is made. Everyone is free to vote on this release, so get stuck in!
+
+The release artefacts we are voting on are available here:
+
+    %candidate_url%/%package%.tar.gz
+    %candidate_url%/%package%.tar.gz.asc
+    %candidate_url%/%package%.tar.gz.ish
+    %candidate_url%/%package%.tar.gz.md5
+    %candidate_url%/%package%.tar.gz.sha
+
+Please follow the test procedure here:
+
+    http://wiki.apache.org/couchdb/Test_procedure
+
+Please remember that "rc.%candidate%" is an annotation. If the vote passes, these artefacts will be released as Apache CouchDB %version%.
+
+Thanks,

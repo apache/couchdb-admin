@@ -123,18 +123,6 @@ email_file=$tmp_dir/email.txt
 
 echo "Email text written to:" $email_file
 
-if test -n `which pbcopy`; then
-    cat $email_file | pbcopy && copied=1
-elif test -n `which xclip`; then
-    cat $email_file | xclip -selection c && copied=1
-elif test -n `which clip`; then
-    cat $email_file | clip && copied=1
-fi
-
-if test -n "$copied"; then
-    echo "Copied to your clipboard..."
-fi
-
 echo "Send the email to: dev@couchdb.apache.org"
 
 echo "Files in $tmp_dir"

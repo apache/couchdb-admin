@@ -1,0 +1,19 @@
+Subject: [RESULT] (Was: [VOTE] Release Apache CouchDB %VERSION%-rc.%CANDIDATE%)
+
+Dear community,
+
+The final tally of the vote is:
+
+    %TALLY%
+
+This is a successful majority approval, and the vote passes.
+
+I shall prepare the release as soon as possible.
+
+The individual votes are as follows:
+
+    %INDIVIDUAL_VOTES%
+
+Thanks,
+
+%VOTE_THREAD%

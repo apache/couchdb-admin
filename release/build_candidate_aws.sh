@@ -112,4 +112,4 @@ scp -i $identity_file $connection:$tgz_file $tmp_dir
 
 scp -i $identity_file $connection:$ish_file $tmp_dir
 
-echo "Files in $tmp_dir"
+echo "Files in: $tmp_dir"

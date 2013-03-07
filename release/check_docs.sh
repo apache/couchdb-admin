@@ -135,3 +135,6 @@ done
 for version in $versions; do
     scan $version
 done
+
+echo "Files in: $tmp_dir"
+

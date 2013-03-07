@@ -18,7 +18,7 @@
 #
 # cf. http://wiki.apache.org/couchdb/Release_Procedure
 
-EMAIL_TPL=email/vote_release.txt
+EMAIL_TPL=../email/vote_release.txt
 
 if test -n "$1"; then
     candidate_dir=$1
@@ -66,6 +66,8 @@ TMP_DIR=$tmp_dir
 
 SVN_DIR=\$(TMP_DIR)/svn
 
+SVN_DOT_DIR=\$(TMP_DIR)/.svn
+
 EMAIL_TPL=$EMAIL_TPL
 
 EMAIL_FILE=\$(TMP_DIR)/email.txt
@@ -90,17 +92,19 @@ COMMIT_MSG_FILES="Add \$(VERSION) rc.\$(CANDIDATE) files"
 
 GPG=gpg --armor --detach-sig \$(GPG_ARGS)
 
+SVN=svn --config-dir \$(SVN_DOT_DIR) --no-auth-cache
+
 all: checkin
 
 checkin: sign
-	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE)
-	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).asc
-	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).ish
-	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).md5
-	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).sha
-	cd \$(SVN_DIR) && svn status
+	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE)
+	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).asc
+	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).ish
+	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).md5
+	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).sha
+	cd \$(SVN_DIR) && \$(SVN) status
 	sleep 10
-	cd \$(SVN_DIR) && svn ci -m \$(COMMIT_MSG_FILES)
+	cd \$(SVN_DIR) && \$(SVN) ci -m \$(COMMIT_MSG_FILES)
 
 sign: copy
 	\$(GPG) < \$(SVN_TGZ_FILE) > \$(SVN_TGZ_FILE).asc
@@ -115,13 +119,15 @@ check: \$(SVN_DIR)
 	test -s \$(CANDIDATE_TGZ_FILE)
 	test -s \$(CANDIDATE_TGZ_FILE).ish
 
-\$(SVN_DIR):
-	svn mkdir --parents \$(CANDIDATE_URL) -m \$(COMMIT_MSG_DIR)
+\$(SVN_DIR): \$(SVN_DOT_DIR)
+	\$(SVN) mkdir --parents \$(CANDIDATE_URL) -m \$(COMMIT_MSG_DIR)
 	sleep 10
-	svn co \$(CANDIDATE_URL) \$@
+	\$(SVN) co \$(CANDIDATE_URL) \$@
+
+\$(SVN_DOT_DIR):
+	mkdir \$@
 
 email: \$(EMAIL_FILE)
-	cat \$(EMAIL_FILE)
 
 \$(EMAIL_FILE): \$(EMAIL_TPL)
 	sed -e "s|%VERSION%|\$(VERSION)|g" \
@@ -145,4 +151,4 @@ echo "Email text written to:" $email_file
 
 echo "Send the email to: dev@couchdb.apache.org"
 
-echo "Files in $tmp_dir"
+echo "Files in: $tmp_dir"

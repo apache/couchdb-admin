@@ -20,7 +20,7 @@
 
 GIT_URL=https://git-wip-us.apache.org/repos/asf?p=couchdb.git;a=blob_plain;
 
-EMAIL_TPL=email/discuss_release.txt
+EMAIL_TPL=discuss_release.txt
 
 if test -n "$1"; then
     cache_dir=$1
@@ -104,4 +104,4 @@ echo "Email text written to:" $email_file
 
 echo "Send the email to: dev@couchdb.apache.org"
 
-echo "Files in $tmp_dir"
+echo "Files in: $tmp_dir"

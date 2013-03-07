@@ -79,7 +79,7 @@ cat > $diff_file <<EOF
 ^Only in $tmp_dir/apache-couchdb-1.3.0/src/couchdb/priv: couchjs.1\$
 EOF
 
-build_file=build.mk
+build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
 URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
@@ -166,4 +166,4 @@ make -f $build_file check
 
 log "Check complete..."
 
-echo "Files in $tmp_dir"
+echo "Files in: $tmp_dir"

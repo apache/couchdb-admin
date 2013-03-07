@@ -1,0 +1,13 @@
+Subject: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as committer)
+
+Dear PMC,
+
+I would like to elect %NAME% as committer.
+
+I believe we reached consensus on the corresponding [DISCUSS] thread.
+
+Please cast your votes now.
+
+Thanks,
+
+%DISCUSS_THREAD%

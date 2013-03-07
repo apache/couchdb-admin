@@ -65,7 +65,7 @@ email_in_file = open("$email_in_file")
 
 email_in_file_content = email_in_file.read()
 
-email_in_file_content = email_in_file_content.replace("%news%", news)
+email_in_file_content = email_in_file_content.replace("%NEWS%", news)
 
 email_in_file = open("$email_in_file", "w")
 
@@ -76,8 +76,8 @@ email_file=$tmp_dir/email.txt
 
 changes=$GIT_URL"f=CHANGES;hb=$branch"
 
-sed -e "s|%version%|$version|g" \
-    -e "s|%changes%|$changes|g" \
+sed -e "s|%VERSION%|$version|g" \
+    -e "s|%CHANGES%|$changes|g" \
     < $email_in_file > $email_file
 
 echo "Email text written to:" $email_file

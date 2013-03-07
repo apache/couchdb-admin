@@ -104,10 +104,10 @@ email: \$(EMAIL_FILE)
 	cat \$(EMAIL_FILE)
 
 \$(EMAIL_FILE): \$(EMAIL_TPL)
-	sed -e "s|%version%|\$(VERSION)|g" \
-	    -e "s|%candidate%|\$(CANDIDATE)|g"  \
-	    -e "s|%candidate_url%|\$(CANDIDATE_URL)|g" \
-	    -e "s|%package%|\$(PACKAGE)|g" > \
+	sed -e "s|%VERSION%|\$(VERSION)|g" \
+	    -e "s|%CANDIDATE%|\$(CANDIDATE)|g"  \
+	    -e "s|%CANDIDATE_URL%|\$(CANDIDATE_URL)|g" \
+	    -e "s|%PACKAGE%|\$(PACKAGE)|g" > \
 	    \$@ < \$<
 EOF
 

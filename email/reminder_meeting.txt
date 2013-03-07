@@ -1,8 +1,8 @@
-Subject: [REMINDER] Weekly IRC meeting, Wednesday (tomorrow) at 20:00 GMT
+Subject: [REMINDER] Weekly IRC meeting, %DATE% at 20:00 GMT
 
 Dear community,
 
-Please join our weekly IRC meeting, Wednesday (tomorrow) at 20:00 GMT.
+Please join our weekly IRC meeting, %DATE% at 20:00 GMT.
 
 Everyone is welcome to attend this meeting.
 

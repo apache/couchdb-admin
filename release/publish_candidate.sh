@@ -55,18 +55,16 @@ tmp_dir=`mktemp -d /tmp/$basename.XXXXXX` || exit 1
 
 echo $tmp_dir
 
-build_file=build.mk
+build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
 # SVN_URL=https://dist.apache.org/repos/dist/dev/couchdb
 
-SVN_URL=https://svn.apache.org/repos/asf/couchdb/site/test
+SVN_URL=https://svn.apache.org/repos/asf/couchdb/site/test/dev
 
 TMP_DIR=$tmp_dir
 
 SVN_DIR=\$(TMP_DIR)/svn
-
-SVN_DOT_DIR=\$(TMP_DIR)/.svn
 
 EMAIL_TPL=$EMAIL_TPL
 
@@ -76,19 +74,19 @@ VERSION=$version
 
 CANDIDATE=$candidate
 
+PACKAGE=apache-couchdb-\$(VERSION)
+
 CANDIDATE_DIR=$candidate_dir
 
 CANDIDATE_URL=\$(SVN_URL)/source/\$(VERSION)/rc.\$(CANDIDATE)
-
-PACKAGE=apache-couchdb-\$(VERSION)
 
 CANDIDATE_TGZ_FILE=\$(CANDIDATE_DIR)/\$(PACKAGE).tar.gz
 
 SVN_TGZ_FILE=\$(SVN_DIR)/\$(PACKAGE).tar.gz
 
-COMMIT_MSG_DIR="Add \$(VERSION) rc.\$(CANDIDATE) dir"
+COMMIT_MSG_DIR="Add \$(VERSION)-rc.\$(CANDIDATE) dir"
 
-COMMIT_MSG_FILES="Add \$(VERSION) rc.\$(CANDIDATE) files"
+COMMIT_MSG_FILES="Add \$(VERSION)-rc.\$(CANDIDATE) files"
 
 GPG=gpg --armor --detach-sig \$(GPG_ARGS)
 
@@ -97,14 +95,14 @@ SVN=svn --config-dir \$(SVN_DOT_DIR) --no-auth-cache
 all: checkin
 
 checkin: sign
-	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE)
-	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).asc
-	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).ish
-	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).md5
-	cd \$(SVN_DIR) && \$(SVN) add \$(SVN_TGZ_FILE).sha
-	cd \$(SVN_DIR) && \$(SVN) status
+	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE)
+	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).asc
+	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).ish
+	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).md5
+	cd \$(SVN_DIR) && svn add \$(SVN_TGZ_FILE).sha
+	cd \$(SVN_DIR) && svn status
 	sleep 10
-	cd \$(SVN_DIR) && \$(SVN) ci -m \$(COMMIT_MSG_FILES)
+	cd \$(SVN_DIR) && svn ci -m \$(COMMIT_MSG_FILES)
 
 sign: copy
 	\$(GPG) < \$(SVN_TGZ_FILE) > \$(SVN_TGZ_FILE).asc
@@ -120,12 +118,9 @@ check: \$(SVN_DIR)
 	test -s \$(CANDIDATE_TGZ_FILE).ish
 
 \$(SVN_DIR): \$(SVN_DOT_DIR)
-	\$(SVN) mkdir --parents \$(CANDIDATE_URL) -m \$(COMMIT_MSG_DIR)
+	svn mkdir --parents \$(CANDIDATE_URL) -m \$(COMMIT_MSG_DIR)
 	sleep 10
-	\$(SVN) co \$(CANDIDATE_URL) \$@
-
-\$(SVN_DOT_DIR):
-	mkdir \$@
+	svn co \$(CANDIDATE_URL) \$@
 
 email: \$(EMAIL_FILE)
 
@@ -137,7 +132,7 @@ email: \$(EMAIL_FILE)
 	    \$@ < \$<
 EOF
 
-log "Checking candidate into Subversion..."
+log "Adding candidate to the release dist directory..."
 
 make -f $build_file
 

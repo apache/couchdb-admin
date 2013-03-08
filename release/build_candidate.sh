@@ -82,11 +82,11 @@ EOF
 build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
-URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
+GIR_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
 
 TMP_DIR=$tmp_dir
 
-SRC_DIR=\$(TMP_DIR)/git
+GIT_DIR=\$(TMP_DIR)/git
 
 DIFF_FILE=$diff_file
 
@@ -96,30 +96,27 @@ VERSION=$version
 
 PACKAGE=apache-couchdb-\$(VERSION)
 
-SRC_FILE=\$(SRC_DIR)/\$(PACKAGE).tar.gz
+GIT_FILE=\$(GIT_DIR)/\$(PACKAGE).tar.gz
 
-TGZ_FILE=\$(TMP_DIR)/\$(PACKAGE).tar.gz
+TMP_FILE=\$(TMP_DIR)/\$(PACKAGE).tar.gz
 
 all: \$(TMP_DIR)/\$(PACKAGE).tar.gz
 
-\$(TMP_DIR)/\$(PACKAGE).tar.gz: \$(TGZ_FILE).ish
-	cd \$(SRC_DIR) && \
+\$(TMP_FILE): \$(TMP_FILE).ish
+	cd \$(GIT_DIR) && \
 	    ./bootstrap
-	cd \$(SRC_DIR) && \
+	cd \$(GIT_DIR) && \
 	    ./configure --enable-strictness --disable-tests
-	cd \$(SRC_DIR) && \
+	cd \$(GIT_DIR) && \
 	    DISTCHECK_CONFIGURE_FLAGS="--disable-tests" make -j distcheck
-	mv \$(SRC_FILE) \$(TGZ_FILE)
+	mv \$(GIT_FILE) \$(TMP_FILE)
 
-\$(TGZ_FILE).ish: \$(SRC_DIR)
-	cd \$(SRC_DIR) && git show HEAD | head -n 1 | cut -d " " -f 2 > \$@
+\$(TMP_FILE).ish: \$(GIT_DIR)
+	cd \$(GIT_DIR) && git show HEAD | head -n 1 | cut -d " " -f 2 > \$@
 
-\$(SRC_DIR): \$(TMP_DIR)
-	git clone \$(URL) \$@
-	cd \$(SRC_DIR) && git checkout -b \$(BRANCH) origin/\$(BRANCH)
-
-\$(TMP_DIR):
-	mkdir \$@
+\$(GIT_DIR):
+	git clone \$(GIR_URL) \$@
+	cd \$(GIT_DIR) && git checkout -b \$(BRANCH) origin/\$(BRANCH)
 
 check: check-files
 
@@ -134,18 +131,18 @@ check-files: check-diff
 	    grep `date +%Y` share/doc/src/conf.py
 
 check-diff: check-file-size
-	cd \$(SRC_DIR) && git archive \
+	cd \$(GIT_DIR) && git archive \
 	    --prefix=\$(BRANCH)/ -o ../\$(BRANCH).tar \
-	    \`cat \$(TGZ_FILE).ish\`
+	    \`cat \$(TMP_FILE).ish\`
 	cd \$(TMP_DIR) && tar -xf \$(TMP_DIR)/\$(BRANCH).tar
-	cd \$(TMP_DIR) && tar -xzf \$(TGZ_FILE)
+	cd \$(TMP_DIR) && tar -xzf \$(TMP_FILE)
 	diff -r \$(TMP_DIR)/\$(PACKAGE) \$(TMP_DIR)/\$(BRANCH) \
 	    | grep --include= -vEf \$(DIFF_FILE); \
-	test "\$\$?" -eq 1
+	    test "\$\$?" -eq 1
 
 check-file-size:
-	test -s \$(TGZ_FILE)
-	test -s \$(TGZ_FILE).ish
+	test -s \$(TMP_FILE)
+	test -s \$(TMP_FILE).ish
 EOF
 
 log_file=$tmp_dir/log.txt

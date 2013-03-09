@@ -91,7 +91,7 @@ sudo apt-get install -y \
 
 rm -rf couchdb-pmc
 
-git clone https://github.com/nslater-asf/couchdb-pmc.git
+git clone http://git-wip-us.apache.org/repos/asf/couchdb-admin.git
 
 tmp_dir=\`mktemp -d /tmp/$basename.XXXXXX\` || exit 1
 

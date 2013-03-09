@@ -95,7 +95,9 @@ git clone http://git-wip-us.apache.org/repos/asf/couchdb-admin.git
 
 tmp_dir=\`mktemp -d /tmp/$basename.XXXXXX\` || exit 1
 
-./couchdb-pmc/release/build_candidate.sh $branch $version \$tmp_dir
+cd couchdb-admin
+
+./release/build_candidate.sh $branch $version \$tmp_dir
 
 echo \$tmp_dir > ~/tmp_dir.txt
 EOF

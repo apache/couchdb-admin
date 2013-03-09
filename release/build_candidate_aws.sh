@@ -89,7 +89,7 @@ sudo apt-get install -y \
     libmozjs-dev \
     libcurl4-openssl-dev
 
-rm -rf couchdb-pmc
+rm -rf couchdb-admin
 
 git clone http://git-wip-us.apache.org/repos/asf/couchdb-admin.git
 

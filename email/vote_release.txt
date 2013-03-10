@@ -12,11 +12,11 @@ We encourage the whole community to download and test these release artefacts so
 
 The release artefacts we are voting on are available here:
 
-    %CANDIDATE_URL%/%PACKAGE%.tar.gz
-    %CANDIDATE_URL%/%PACKAGE%.tar.gz.asc
-    %CANDIDATE_URL%/%PACKAGE%.tar.gz.ish
-    %CANDIDATE_URL%/%PACKAGE%.tar.gz.md5
-    %CANDIDATE_URL%/%PACKAGE%.tar.gz.sha
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.asc
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.ish
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.md5
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.sha
 
 Please follow the test procedure here:
 

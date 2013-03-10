@@ -12,30 +12,24 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-# This script is for use by committers.
-#
-# It should be used in accordance with the project release procedure.
-#
-# cf. http://wiki.apache.org/couchdb/Release_Procedure
-
 if test -n "$1"; then
     version=$1
 else
-	echo "error: no version"
+    echo "error: no version"
     exit
 fi
 
 if test -n "$2"; then
     candidate=$2
 else
-	echo "error: no candidate number"
+    echo "error: no candidate number"
     exit
 fi
 
 if test -n "$3"; then
     gpg_key=$3
 else
-	echo "error: no GPG key"
+    echo "error: no GPG key"
     exit
 fi
 

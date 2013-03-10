@@ -12,37 +12,31 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-# This script is for use by committers.
-#
-# It should be used in accordance with the project release procedure.
-#
-# cf. http://wiki.apache.org/couchdb/Release_Procedure
-
 if test -n "$1"; then
     identity_file=$1
 else
-	echo "error: no identity file"
+    echo "error: no identity file"
     exit 1
 fi
 
 if test -n "$2"; then
     connection=$2
 else
-	echo "error: no connection string"
+    echo "error: no connection string"
     exit 1
 fi
 
 if test -n "$3"; then
     branch=$3
 else
-	echo "error: no branch"
+    echo "error: no branch"
     exit 1
 fi
 
 if test -n "$4"; then
     version=$4
 else
-	echo "error: no version"
+    echo "error: no version"
     exit 1
 fi
 

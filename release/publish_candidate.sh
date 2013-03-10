@@ -12,32 +12,26 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-# This script is for use by committers.
-#
-# It should be used in accordance with the project release procedure.
-#
-# cf. http://wiki.apache.org/couchdb/Release_Procedure
-
 EMAIL_TPL=../email/vote_release.txt
 
 if test -n "$1"; then
     candidate_dir=$1
 else
-	echo "error: no candidate directory"
+    echo "error: no candidate directory"
     exit
 fi
 
 if test -n "$2"; then
     version=$2
 else
-	echo "error: no version"
+    echo "error: no version"
     exit
 fi
 
 if test -n "$3"; then
     candidate=$3
 else
-	echo "error: no candidate number"
+    echo "error: no candidate number"
     exit
 fi
 
@@ -103,9 +97,12 @@ checkin: sign
 	cd \$(SVN_DIR) && svn ci -m \$(COMMIT_MSG_FILES)
 
 sign: copy
-	\$(GPG) < \$(SVN_TGZ_FILE) > \$(SVN_TGZ_FILE).asc
-	md5sum \$(SVN_TGZ_FILE) > \$(SVN_TGZ_FILE).md5
-	sha1sum \$(SVN_TGZ_FILE) > \$(SVN_TGZ_FILE).sha
+	cd \$(SVN_DIR) && \
+	    \$(GPG) < \$(PACKAGE).tar.gz > \$(PACKAGE).tar.gz.asc
+	cd \$(SVN_DIR) && \
+	    md5sum \$(PACKAGE).tar.gz > \$(PACKAGE).tar.gz.md5
+	cd \$(SVN_DIR) && \
+	    sha1sum \$(PACKAGE).tar.gz > \$(PACKAGE).tar.gz.sha
 
 copy: check
 	cp \$(CANDIDATE_TGZ_FILE) \$(SVN_TGZ_FILE)

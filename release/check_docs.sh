@@ -12,16 +12,10 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-# This script is for use by committers.
-#
-# It should be used in accordance with the project release procedure.
-#
-# cf. http://wiki.apache.org/couchdb/Release_Procedure
-
 if test -n "$1"; then
     cve_list_file=$1
 else
-	echo "error: no remote CVE list file"
+    echo "error: no remote CVE list file"
     exit 1
 fi
 

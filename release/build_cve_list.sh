@@ -12,12 +12,6 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-# This script is for use by committers.
-#
-# It should be used in accordance with the project release procedure.
-#
-# cf. http://wiki.apache.org/couchdb/Release_Procedure
-
 cd `dirname $0`
 
 basename=`basename $0`

@@ -31,20 +31,24 @@ exit="echo Files in: $temp_dir"
 
 trap "echo && $exit && kill 0" SIGINT
 
+build () {
+	time_start=`date "+%s"`
+	log_file=$temp_dir/$time_start".txt"
+	echo "Build started `date -r $time_start`" > $log_file
+	make distcheck | tee -a $log_file
+	time_finish=`date "+%s"`
+	echo "Build finished `date -r $time_finish`" >> $log_file
+	total_time=`expr $time_finish - $time_start`
+	echo "Build took `TZ=UTC date -r $total_time +%H:%M:%S`" >> $log_file
+}
+
 while true; do
     sleep 5
     log "Checking build..."
     if test -s apache-couchdb-$version.tar.gz; then
         break
     else
-		time_start=`date "+%s"`
-		log_file=$temp_dir/$time_start".txt"
-		echo "Build started `date -r $time_start`" > $log_file
-		make distcheck | tee -a $log_file
-		time_finish=`date "+%s"`
-		echo "Build finished `date -r $time_finish`" >> $log_file
-		total_time=`expr $time_finish - $time_start`
-		echo "Build took `TZ=UTC date -r $total_time +%H:%M:%S`" >> $log_file
+        build
     fi
 done
 

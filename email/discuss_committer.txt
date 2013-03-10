@@ -6,6 +6,10 @@ I would like to elect %NAME% as committer.
 
 %REASONS%
 
-If there appears to be consensus I will call a vote.
+Please respond now if you think there is anything to discuss.
+
+You do not need to respond if you are in agreement. If there is no response in 72 hours, I will assume lazy consensus.
+
+If we reach consensus, I will start the corresponding [VOTE] thread and complete the rest of process.
 
 Thanks,

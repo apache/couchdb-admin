@@ -58,9 +58,7 @@ echo $tmp_dir
 build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
-# SVN_URL=https://dist.apache.org/repos/dist/dev/couchdb
-
-SVN_URL=https://svn.apache.org/repos/asf/couchdb/site/test/dev
+SVN_URL=https://dist.apache.org/repos/dist/dev/couchdb
 
 TMP_DIR=$tmp_dir
 

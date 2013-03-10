@@ -58,13 +58,9 @@ build_file=$tmp_dir/build.mk
 cat > $build_file <<EOF
 GIR_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
 
-# SVN_DEV_URL=https://dist.apache.org/repos/dist/dev/couchdb
+SVN_DEV_URL=https://dist.apache.org/repos/dist/dev/couchdb
 
-# SVN_RELEASE_URL=https://dist.apache.org/repos/dist/release/couchdb
-
-SVN_DEV_URL=https://svn.apache.org/repos/asf/couchdb/site/test/dev
-
-SVN_RELEASE_URL=https://svn.apache.org/repos/asf/couchdb/site/test/release
+SVN_RELEASE_URL=https://dist.apache.org/repos/dist/release/couchdb
 
 TMP_DIR=$tmp_dir
 
@@ -104,7 +100,7 @@ release:
 tag: \$(GIT_DIR)
 	echo git tag -u \$(GPG_KEY) \$(VERSION) \
 	    \`cat \$(ISH_FILE)\` -m \$(COMMIT_MSG_TAG)
-	echo git push origin \$(VERSION)
+	git push origin \$(VERSION)
 
 \$(GIT_DIR): check
 	git clone \$(GIR_URL) \$@

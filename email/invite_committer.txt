@@ -1,0 +1,17 @@
+Subject: Invitation to become a CouchDB committer: %NAME%
+
+Hello %NAME%,
+
+The Apache CouchDB Project Management Committee would like to invite you to become a committer. We value your contributions and we are aware that you are committed to the project.
+
+Being a committer allows you to contribute more autonomously. For developers, it enables you to more easily make changes and eliminates the need to have contributions reviewed.
+
+Whether your work is development related or otherwise, this is a recognition of your contributions and commitment to the project and the Apache Way.
+
+While this does not mean that you need to participate any more than you already do, people do tend to feel more committed to the project. And because of this, you may find that you spend more time here.
+
+Of course, you can decline and continue to contribute as you do now. If you do decline, it will be kept private, unless you say otherwise.
+
+Either way, please let us know in reply to the private@couchdb.apache.org list only. If you accept, we will announce your new position on the dev@couchdb.apache.org list after your account is created.
+
+On behalf of the CouchDB PMC,

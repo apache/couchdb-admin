@@ -1,0 +1,15 @@
+Subject: [RESULT] (Was: Re: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as committer))
+
+Dear PMC, 
+
+The vote has now closed.
+
+The results are:
+
+    +1 - %PLUS_ONE_VOTES% votes
+     0 - %ZERO_VOTES% votes
+    -1 - %MINUS_ONE_VOTES% votes
+
+The vote is %RESULT%.
+
+Thank you,

@@ -1,6 +1,6 @@
 Subject: Invitation to become a CouchDB committer: %NAME%
 
-Hello %NAME%,
+Dear %NAME%,
 
 The Apache CouchDB Project Management Committee would like to invite you to become a committer. We value your contributions and we are aware that you are committed to the project.
 

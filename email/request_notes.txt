@@ -1,0 +1,13 @@
+Subject: [REQUEST] Release notes for %VERSION%-rc.%CANDIDATE%
+
+Dear community,
+
+This is a request to prepare the release notes for the %VERSION%-rc.%CANDIDATE% release.
+
+Please follow the release procedure:
+
+    http://wiki.apache.org/couchdb/Release_Procedure#Preparing_the_Release_Notes
+    
+Everyone is welcome to prepare the release notes for this release.
+
+Thanks,

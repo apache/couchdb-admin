@@ -18,7 +18,7 @@
 #
 # cf. http://wiki.apache.org/couchdb/Release_Procedure
 
-GIT_URL=https://git-wip-us.apache.org/repos/asf?p=couchdb.git;a=blob_plain;
+GIT_URL="https://git-wip-us.apache.org/repos/asf?p=couchdb.git;a=blob_plain;"
 
 EMAIL_TPL=discuss_release.txt
 
@@ -94,7 +94,7 @@ EOF
 
 email_file=$tmp_dir/email.txt
 
-changes=$GIT_URL"f=CHANGES;hb=$branch"
+changes=$GIT_URL"\&f=CHANGES;hb=$branch"
 
 sed -e "s|%VERSION%|$version|g" \
     -e "s|%CHANGES%|$changes|g" \

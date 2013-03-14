@@ -6,7 +6,7 @@ The Apache CouchDB Project Management Committee would like to invite you to beco
 
 Being a committer allows you to contribute more autonomously. For developers, it enables you to more easily make changes and eliminates the need to have contributions reviewed.
 
-Whether your work is development related or otherwise, this is a recognition of your contributions and commitment to the project and the Apache Way.
+Whether your work is development related or otherwise, this is a recognition of your contributions and commitment to the project.
 
 While this does not mean that you need to participate any more than you already do, people do tend to feel more committed to the project. And because of that, you may find that you spend more time here.
 

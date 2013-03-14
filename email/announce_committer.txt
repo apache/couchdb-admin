@@ -1,0 +1,13 @@
+Subject: [ANNOUNCE] %FORMAL_NAME% elected as CouchDB committer
+
+Dear community,
+
+I am pleased to announce that CouchDB Project Management Committee has elected %FORMAL_NAME% as a CouchDB committer.
+
+By default, outside contributions to the project follow the Review-Then-Commit model. Being a committer means you can follow the Commit-Then-Review model. In other words, %INFORMAL_NAME% can now make changes at will.
+
+This election was made in recognition of %INFORMAL_NAME%'s existing contributions and commitment to the project.
+
+Please join me in extending a warm welcome to %INFORMAL_NAME%!
+
+On behalf of the CouchDB PMC,

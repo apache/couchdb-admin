@@ -1,0 +1,31 @@
+Subject: Next steps as a new committer
+
+Dear %NAME%,
+
+As you know, the ASF Infrastructure has set up your committer account as %ID%.
+
+Please log in and configure your account, if you haven't already done so:
+
+    https://id.apache.org/
+
+You can use this to set up SSH, GPG, mail forwarding, etc.
+
+More information here:
+
+    http://www.apache.org/dev/#committers
+
+You now have commit access to specific parts of the ASF.
+
+CouchDB resources are here:
+
+    http://wiki.apache.org/couchdb/SourceCode
+
+General committers resources are here:
+
+    https://svn.apache.org/repos/private/committers
+
+Naturally, if you don't understand anything be sure to ask us on the CouchDB dev mailing list. Documentation is maintained by volunteers and hence can be out-of-date or incomplete. Of course, you can now help fix that!
+
+I will announce you to the dev list soon.
+
+Thanks,

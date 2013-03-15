@@ -1,4 +1,8 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: private@couchdb.apache.org
 Subject: Invitation to become a CouchDB committer
+================================================================================
 
 Dear %NAME%,
 
@@ -8,7 +12,7 @@ Being a committer allows you to contribute more autonomously. For developers, it
 
 Whether your work is development related or otherwise, this is a recognition of your contributions and commitment to the project.
 
-While this does not mean that you need to participate any more than you already do, people do tend to feel more committed to the project. And because of that, you may find that you spend more time here.
+Being a committer is a position of trust. It in no way obligates you to contribute more. The ASF is a volunteer organisation, and it is entirely normal for people's contribution levels to vary. Obviously, we hope that you will contribute more, but it is not an expectation, or an obligation, and nothing bad will happen if you don't.
 
 Of course, you can decline and continue to contribute as you do now. If you do decline, it will be kept private, unless you say otherwise.
 

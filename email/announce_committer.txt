@@ -1,4 +1,7 @@
+From: %YOU%
+To: dev@couchdb.apache.org
 Subject: [ANNOUNCE] %FORMAL_NAME% elected as CouchDB committer
+================================================================================
 
 Dear community,
 

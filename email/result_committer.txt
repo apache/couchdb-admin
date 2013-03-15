@@ -1,4 +1,7 @@
+From: %YOU%
+To: private@couchdb.apache.org
 Subject: [RESULT] (Was: Re: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as committer))
+================================================================================
 
 Dear PMC, 
 

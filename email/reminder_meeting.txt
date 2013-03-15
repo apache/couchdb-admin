@@ -1,4 +1,7 @@
+From: %YOU%
+To: dev@couchdb.apache.org
 Subject: [REMINDER] Weekly IRC meeting, %DATE% at 20:00 GMT
+================================================================================
 
 Dear community,
 

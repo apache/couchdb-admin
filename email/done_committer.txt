@@ -1,4 +1,8 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: private@couchdb.apache.org
 Subject: Next steps as a new committer
+================================================================================
 
 Dear %NAME%,
 

@@ -1,4 +1,7 @@
+From: %YOU%
+To: dev@couchdb.apache.org
 Subject: [REQUEST] Binaries for %VERSION%-rc.%CANDIDATE%
+================================================================================
 
 Dear community,
 

@@ -1,4 +1,7 @@
+From: %YOU%
+To: dev@couchdb.apache.org
 Subject: [VOTE] Release Apache CouchDB %VERSION%-rc.%CANDIDATE%
+================================================================================
 
 Dear community,
 

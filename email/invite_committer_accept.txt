@@ -34,4 +34,6 @@ The CouchDB community guide can be found here:
 
     http://wiki.apache.org/couchdb/Community_Guide
 
+Additionally, if you use IRC or Twitter, you may want to provide us with your preferred usernames so that we can include them in the announcement.
+
 Thank you,

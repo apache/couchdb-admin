@@ -149,6 +149,4 @@ email_file=$tmp_dir/email.txt
 
 echo "Email text written to:" $email_file
 
-echo "Send the email to: dev@couchdb.apache.org"
-
 echo "Files in: $tmp_dir"

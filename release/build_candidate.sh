@@ -45,32 +45,32 @@ fi
 diff_file=$tmp_dir/diff.txt
 
 cat > $diff_file <<EOF
-^Only in $tmp_dir/1.3.x: .gitignore\$
-^Only in $tmp_dir/1.3.x: .mailmap\$
-^Only in $tmp_dir/1.3.x: .travis.yml\$
-^Only in $tmp_dir/1.3.x: acinclude.m4.in\$
-^Only in $tmp_dir/1.3.x: bootstrap\$
-^Only in $tmp_dir/1.3.x: THANKS.in\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: acinclude.m4\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: aclocal.m4\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: config.h.in\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: configure\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: INSTALL\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: m4\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: Makefile.in\$
-^Only in $tmp_dir/apache-couchdb-1.3.0: THANKS\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/.*: Makefile.in\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/bin: couchdb.1\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: config.guess\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: config.sub\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: depcomp\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: install-sh\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: ltmain.sh\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/build-aux: missing\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/share/doc/build: html\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/share/doc/build: latex\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/share/doc/build: texinfo\$
-^Only in $tmp_dir/apache-couchdb-1.3.0/src/couchdb/priv: couchjs.1\$
+^Only in $tmp_dir/$branch: .gitignore\$
+^Only in $tmp_dir/$branch: .mailmap\$
+^Only in $tmp_dir/$branch: .travis.yml\$
+^Only in $tmp_dir/$branch: acinclude.m4.in\$
+^Only in $tmp_dir/$branch: bootstrap\$
+^Only in $tmp_dir/$branch: THANKS.in\$
+^Only in $tmp_dir/apache-couchdb-$version: acinclude.m4\$
+^Only in $tmp_dir/apache-couchdb-$version: aclocal.m4\$
+^Only in $tmp_dir/apache-couchdb-$version: config.h.in\$
+^Only in $tmp_dir/apache-couchdb-$version: configure\$
+^Only in $tmp_dir/apache-couchdb-$version: INSTALL\$
+^Only in $tmp_dir/apache-couchdb-$version: m4\$
+^Only in $tmp_dir/apache-couchdb-$version: Makefile.in\$
+^Only in $tmp_dir/apache-couchdb-$version: THANKS\$
+^Only in $tmp_dir/apache-couchdb-$version/.*: Makefile.in\$
+^Only in $tmp_dir/apache-couchdb-$version/bin: couchdb.1\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: config.guess\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: config.sub\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: depcomp\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: install-sh\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: ltmain.sh\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: missing\$
+^Only in $tmp_dir/apache-couchdb-$version/share/doc/build: html\$
+^Only in $tmp_dir/apache-couchdb-$version/share/doc/build: latex\$
+^Only in $tmp_dir/apache-couchdb-$version/share/doc/build: texinfo\$
+^Only in $tmp_dir/apache-couchdb-$version/src/couchdb/priv: couchjs.1\$
 EOF
 
 build_file=$tmp_dir/build.mk

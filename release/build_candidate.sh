@@ -134,7 +134,9 @@ check-files: check-diff
 	cd \$(TMP_DIR)/\$(PACKAGE) && \
 	    grep `date +%Y` NOTICE
 	cd \$(TMP_DIR)/\$(PACKAGE) && \
-	    grep `date +%Y` share/doc/src/conf.py
+	    if test -f share/doc/src/conf.py; then \
+	        grep `date +%Y` share/doc/src/conf.py; \
+	    fi
 
 check-diff: check-file-size
 	cd \$(GIT_DIR) && git archive \

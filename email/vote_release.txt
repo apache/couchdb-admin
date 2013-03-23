@@ -9,7 +9,7 @@ I would like to call a vote on Apache CouchDB %VERSION%-rc.%CANDIDATE%.
 
 Changes since last round:
 
- * %CHANGES%
+ * https://git-wip-us.apache.org/repos/asf?p=couchdb.git;a=shortlog;h=refs/heads/%BRANCH%
 
 We encourage the whole community to download and test these release artefacts so that any critical issues can be resolved before the release is made. Everyone is free to vote on this release, so get stuck in!
 

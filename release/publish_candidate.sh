@@ -22,14 +22,21 @@ else
 fi
 
 if test -n "$2"; then
-    version=$2
+    branch=$2
+else
+    echo "error: no branch"
+    exit
+fi
+
+if test -n "$3"; then
+    version=$3
 else
     echo "error: no version"
     exit
 fi
 
-if test -n "$3"; then
-    candidate=$3
+if test -n "$4"; then
+    candidate=$4
 else
     echo "error: no candidate number"
     exit
@@ -61,6 +68,8 @@ SVN_DIR=\$(TMP_DIR)/svn
 EMAIL_TPL=$EMAIL_TPL
 
 EMAIL_FILE=\$(TMP_DIR)/email.txt
+
+BRANCH=$branch
 
 VERSION=$version
 
@@ -120,7 +129,8 @@ check: \$(SVN_DIR)
 email: \$(EMAIL_FILE)
 
 \$(EMAIL_FILE): \$(EMAIL_TPL)
-	sed -e "s|%VERSION%|\$(VERSION)|g" \
+	sed -e "s|%BRANCH%|\$(BRANCH)|g" \
+	    -e "s|%VERSION%|\$(VERSION)|g" \
 	    -e "s|%CANDIDATE%|\$(CANDIDATE)|g"  \
 	    -e "s|%CANDIDATE_URL%|\$(CANDIDATE_URL)|g" \
 	    -e "s|%PACKAGE%|\$(PACKAGE)|g" > \

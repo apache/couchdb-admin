@@ -82,7 +82,7 @@ CANDIDATE_ISH_DEV_URL=\$(CANDIDATE_DEV_URL)/\$(PACKAGE).tar.gz.ish
 
 COMMIT_MSG_TAG="Apache CouchDB \$(VERSION)"
 
-COMMIT_MSG_DIR="Release Apache CouchDB \$(VERSION)"
+COMMIT_MSG_DIR="Copy \$(VERSION) source dir"
 
 all:
 

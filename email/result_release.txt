@@ -5,17 +5,15 @@ Subject: [RESULT] (Was: [VOTE] Release Apache CouchDB %VERSION%-rc.%CANDIDATE%)
 
 Dear community,
 
-The final tally of the vote is:
+The vote has now closed.
 
-    %TALLY%
+The results are:
 
-This is a successful majority approval, and the vote passes.
+    +1 - %PLUS_ONE_VOTES% votes
+     0 - %ZERO_VOTES% votes
+    -1 - %MINUS_ONE_VOTES% votes
 
-I shall prepare the release as soon as possible.
-
-The individual votes are as follows:
-
-    %INDIVIDUAL_VOTES%
+The vote is %RESULT%.
 
 Thanks,
 

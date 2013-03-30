@@ -15,4 +15,6 @@ The results are:
 
 The vote is %RESULT%.
 
-Thank you,
+Thanks,
+
+%VOTE_THREAD%

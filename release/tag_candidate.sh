@@ -92,7 +92,7 @@ release:
 	echo "Release dist directory: \$(VERSION_RELEASE_URL)"
 
 tag: \$(GIT_DIR)
-	echo git tag -u \$(GPG_KEY) \$(VERSION) \
+	git tag -u \$(GPG_KEY) \$(VERSION) \
 	    \`cat \$(ISH_FILE)\` -m \$(COMMIT_MSG_TAG)
 	git push origin \$(VERSION)
 

@@ -92,9 +92,11 @@ release:
 	echo "Release dist directory: \$(VERSION_RELEASE_URL)"
 
 tag: \$(GIT_DIR)
-	git tag -u \$(GPG_KEY) \$(VERSION) \
+	cd \$(GIT_DIR) && \
+	    git tag -u \$(GPG_KEY) \$(VERSION) \
 	    \`cat \$(ISH_FILE)\` -m \$(COMMIT_MSG_TAG)
-	git push origin \$(VERSION)
+	cd \$(GIT_DIR) && \
+	    git push origin \$(VERSION)
 
 \$(GIT_DIR): check
 	git clone \$(GIR_URL) \$@

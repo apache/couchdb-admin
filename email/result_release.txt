@@ -7,6 +7,8 @@ Dear community,
 
 The vote has now closed.
 
+Thank you to everyone who participated!
+
 The results are:
 
     +1 - %PLUS_ONE_VOTES% votes
@@ -15,8 +17,6 @@ The results are:
     -1 - %MINUS_ONE_VOTES% votes
 
 The vote is %RESULT%.
-
-Thank you to everyone who participated!
 
 Thanks,
 

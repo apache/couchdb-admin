@@ -10,10 +10,13 @@ The vote has now closed.
 The results are:
 
     +1 - %PLUS_ONE_VOTES% votes
-     0 - %ZERO_VOTES% votes
+    +0 - %PLUS_ZERO_VOTES% votes
+    -0 - %MINUS_ZERO_VOTES% votes
     -1 - %MINUS_ONE_VOTES% votes
 
 The vote is %RESULT%.
+
+Thank you to everyone who participated!
 
 Thanks,
 

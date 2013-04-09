@@ -1,0 +1,38 @@
+From: %YOU%
+To: user@couchdb.apache.org, dev@couchdb.apache.org
+Subject: [REQUEST] Promote the CouchDB %VERSION% release
+================================================================================
+
+Dear community,
+
+Being a volunteer organisation, we rely on you to help us promote releases.
+
+Here is the official blog post:
+
+    %BLOG_URL%
+
+Here is the official tweet:
+
+    %TWEET_URL%
+
+And Google+ post:
+
+    %GOOGLE_URL%
+
+We also have a Hacker News item:
+
+    %HN_URL%
+
+And several Reddit items:
+
+    %REDDIT_URLS%
+
+Please take a moment to share these links with your friends.
+
+Retweet us if you use Twitter, and upvote us if you use Google+, Hacker News, or Reddit.
+
+(Note that Hacker News users may want to navigate to the item from the front page. I believe up votes are not counted when you link to an item directly.)
+
+If you have any other promotion you'd like to highlight, please reply to this thread.
+
+Thanks,

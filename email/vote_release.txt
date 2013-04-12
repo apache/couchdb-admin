@@ -5,7 +5,7 @@ Subject: [VOTE] Release Apache CouchDB %VERSION%-rc.%CANDIDATE%
 
 Dear community,
 
-I would like to call a vote on Apache CouchDB %VERSION%-rc.%CANDIDATE%.
+I would like to release Apache CouchDB %VERSION%-rc.%CANDIDATE%.
 
 Changes since last round:
 
@@ -26,5 +26,7 @@ Please follow the test procedure here:
     http://wiki.apache.org/couchdb/Test_procedure
 
 Please remember that "rc.%CANDIDATE%" is an annotation. If the vote passes, these artefacts will be released as Apache CouchDB %VERSION%.
+
+Please cast your votes now.
 
 Thanks,

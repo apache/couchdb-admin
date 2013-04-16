@@ -24,7 +24,7 @@ Please notify us when you have submitted the CLA and by what means you did so. T
 
 We will arrange for your Apache user account when the CLA has been recorded. After this we will make an announcement to the dev@couchdb.apache.org list, and your new position will be official.
 
-Please do not make any commits until your new position has been announced.
+You will receive a few emails from different people as this process moves forward. You will be given commit access half way through this process, but please do not make any commits until your new position has been announced.
 
 Some required reading, in the meantime:
 

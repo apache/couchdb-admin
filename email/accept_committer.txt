@@ -8,7 +8,7 @@ Dear %NAME%,
 
 Welcome. Here are the next steps.
 
-You need to send a Contributor License Agreement to the ASF. Normally you would send an Individual CLA. If you also make contributions done in work time or using work resources then see the Corporate CLA. Ask us if you have any questions about this.
+You need to send a Contributor License Agreement to the ASF. Normally you would send an Individual CLA. If you also make contributions on work time or using work resources then see the Corporate CLA. Ask us if you have any questions about this.
 
 Find out how to do this here:
 

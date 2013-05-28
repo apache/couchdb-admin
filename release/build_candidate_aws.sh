@@ -80,7 +80,7 @@ sudo apt-get install -y \
     erlang-eunit \
     erlang-nox \
     libicu-dev \
-    libmozjs-dev \
+    libmozjs185-dev \
     libcurl4-openssl-dev
 
 rm -rf couchdb-admin

@@ -12,11 +12,11 @@ The Apache CouchDB VERSION release is ready to go.
 I plan to make the announcement at:
 
     %DATE% %TIME%
-    
+
 I will use these release notes:
 
    http://www.apache.org/dist/couchdb/notes/VERSION/
-   
+
 Please make any necessary preparations.
 
 Thanks,

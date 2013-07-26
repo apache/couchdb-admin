@@ -59,8 +59,7 @@ for branch in $branches; do
     version=`echo $branch | sed 's,origin/,,'`
     dir=$tmp_dir/branch/$version
     mkdir -p $dir
-    git cat-file blob $branch:NEWS > $dir/NEWS
-    git cat-file blob $branch:CHANGES > $dir/CHANGES
+    git cat-file blob $branch:share/doc/src/changelog.rst > $dir/changelog.rst
 done
 
 python > $tmp_dir/versions.txt << EOF
@@ -82,37 +81,24 @@ for version in versions:
     print version
 EOF
 
-log "Checking CVEs in NEWS..."
+log "Checking CVEs in changelog.rst..."
 
 cat $tmp_dir/cve_list.txt | while read cve; do
-    exists=`grep -r $cve $tmp_dir/branch/*/NEWS || true`
-    if test ! -n "$exists"; then
-        echo $cve "(missing)"
-    fi
-done
-
-log "Checking CVEs in CHANGES..."
-
-cat $tmp_dir/cve_list.txt | while read cve; do
-    exists=`grep -r $cve $tmp_dir/branch/*/CHANGES || true`
+    exists=`grep -r $cve $tmp_dir/branch/*/changelog.rst || true`
     if test ! -n "$exists"; then
         echo $cve "(missing)"
     fi
 done
 
 function compare () {
-    log "Comparing NEWS, $1 to $2..."
-    diff $tmp_dir/branch/$1/NEWS $tmp_dir/branch/$2/NEWS | \
-        grep -E "^< [^#]" || true
-    log "Comparing CHANGES, $1 to $2..."
-    diff $tmp_dir/branch/$1/CHANGES $tmp_dir/branch/$2/CHANGES | \
+    log "Comparing changelog.rst, $1 to $2..."
+    diff $tmp_dir/branch/$1/changelog.rst $tmp_dir/branch/$2/changelog.rst | \
         grep -E "^< [^#]" || true
 }
 
 function scan () {
     log "Scanning $1..."
-    grep "released" $tmp_dir/branch/$1/NEWS || true
-    grep "released" $tmp_dir/branch/$1/CHANGES || true
+    grep "released" $tmp_dir/branch/$1/changelog.rst || true
 }
 
 versions=`cat $tmp_dir/versions.txt`

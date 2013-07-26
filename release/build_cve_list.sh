@@ -30,7 +30,8 @@ log () {
 
 log "Adding mails to export..."
 
-find /home/apmail/private-arch/security -type f | while read mbox_file; do
+find /home/apmail/public-arch/couchdb.apache.org/dev -type f | \
+    while read mbox_file; do
     compressed=\`echo \$mbox_file | grep -E "\.gz" || true\`
     if test -n "\$compressed"; then
         echo "Adding" \$mbox_file "(compressed)"

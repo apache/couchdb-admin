@@ -92,8 +92,8 @@ done
 
 function compare () {
     log "Comparing changelog.rst, $1 to $2..."
-    diff $tmp_dir/branch/$1/changelog.rst $tmp_dir/branch/$2/changelog.rst | \
-        grep -E "^< [^#]" || true
+    diff -u $tmp_dir/branch/$1/changelog.rst $tmp_dir/branch/$2/changelog.rst | \
+       grep -E '^[d \+\-\@]?([^#]|\s)' || true
 }
 
 function scan () {

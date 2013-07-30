@@ -48,7 +48,7 @@ if test ! -d $tmp_dir/git/.git; then
     cd $tmp_dir/git
 else
     cd $tmp_dir/git
-    git fetch
+    git pull
 fi
 
 rm -rf $tmp_dir/branch

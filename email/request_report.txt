@@ -1,0 +1,22 @@
+From: %YOU%
+To: dev@couchdb.apache.org
+Subject: [REQUEST] Board report for %MONTH% %YEAR%
+================================================================================
+
+Dear community,
+
+This is a request to help with the board report for %MONTH% %YEAR%.
+
+You can view my initial draft here:
+
+    https://wiki.apache.org/couchdb/Board_Report/%YYYY%_%MM%
+
+Please read through this and suggest any changes.
+
+This is just a start. Any information you can add will help. We aim to blog about the report, so this is a good opportunity to communicate our progress to the wider community.
+
+Feel free to edit the wiki directly. Or just reply to this email and I will take care of it.
+
+Our deadline to complete this is %DATE%.
+
+Thanks,

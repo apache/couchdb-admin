@@ -51,9 +51,11 @@ cat > $diff_file <<EOF
 ^Only in $tmp_dir/$branch: acinclude.m4.in\$
 ^Only in $tmp_dir/$branch: bootstrap\$
 ^Only in $tmp_dir/$branch: THANKS.in\$
+^Only in $tmp_dir/$branch: Vagrantfile\$
 ^Only in $tmp_dir/$branch/m4: ac_check_curl.m4.gz\$
 ^Only in $tmp_dir/$branch/m4: ac_check_icu.m4.gz\$
 ^Only in $tmp_dir/$branch/m4: pkg.m4.gz\$
+^Only in $tmp_dir/$branch/src: fauxton\$
 ^Only in $tmp_dir/apache-couchdb-$version: acinclude.m4\$
 ^Only in $tmp_dir/apache-couchdb-$version: aclocal.m4\$
 ^Only in $tmp_dir/apache-couchdb-$version: build-aux\$

@@ -130,7 +130,7 @@ check: check-files
 
 check-files: check-diff
 	cd \$(TMP_DIR)/\$(PACKAGE) && \
-	    grep "not released" share/doc/src/changelog.rst; test "\$\$?" -eq 1
+	    grep "not released" share/doc/src/whatsnew/*.rst; test "\$\$?" -eq 1
 	cd \$(TMP_DIR)/\$(PACKAGE) && \
 	    grep "build" acinclude.m4; test "\$\$?" -eq 1
 	cd \$(TMP_DIR)/\$(PACKAGE) && \

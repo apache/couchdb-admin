@@ -135,10 +135,6 @@ check-files: check-diff
 	    grep "build" acinclude.m4; test "\$\$?" -eq 1
 	cd \$(TMP_DIR)/\$(PACKAGE) && \
 	    grep `date +%Y` NOTICE
-	cd \$(TMP_DIR)/\$(PACKAGE) && \
-	    if test -f share/doc/src/conf.py; then \
-	        grep `date +%Y` share/doc/src/conf.py; \
-	    fi
 
 check-diff: check-file-size
 	cd \$(GIT_DIR) && git archive \

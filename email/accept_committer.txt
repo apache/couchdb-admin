@@ -26,11 +26,15 @@ We will arrange for your Apache user account when the CLA has been recorded. Aft
 
 You will receive a few emails from various different people as this process moves forward. You will be given commit access half way through this process, but please do not make any commits until your new position has been announced.
 
-Some required reading, in the meantime:
+Some further reading:
 
     http://www.apache.org/foundation/how-it-works.html
 
-And other general resources:
+    http://www.apache.org/dev/new-committers-guide.html
+
+    http://www.apache.org/dev/committers.html
+
+More resources here:
 
     http://www.apache.org/dev/
 

@@ -18,7 +18,11 @@ More information here:
 
     http://www.apache.org/dev/#committers
 
-You now have commit access to specific parts of the ASF.
+    http://www.apache.org/dev/new-committers-guide.html
+
+    http://www.apache.org/dev/committers.html
+
+You now have commit access to certain parts of the ASF.
 
 CouchDB resources are here:
 

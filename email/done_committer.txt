@@ -6,7 +6,7 @@ Subject: Next steps as a new committer
 
 Dear %NAME%,
 
-As you know, the ASF Infrastructure has set up your committer account as %ID%.
+As you know,  %ID% is your new committer account.
 
 Please log in and configure your account, if you haven't already done so:
 
@@ -14,13 +14,21 @@ Please log in and configure your account, if you haven't already done so:
 
 You can use this to set up SSH, GPG, mail forwarding, etc.
 
-More information here:
+Some further reading:
 
-    http://www.apache.org/dev/#committers
+    http://www.apache.org/foundation/how-it-works.html
 
     http://www.apache.org/dev/new-committers-guide.html
 
     http://www.apache.org/dev/committers.html
+
+More resources here:
+
+    http://www.apache.org/dev/
+
+The CouchDB community guide can be found here:
+
+    http://wiki.apache.org/couchdb/Community_Guide
 
 You now have commit access to certain parts of the ASF.
 
@@ -32,10 +40,8 @@ General committers resources are here:
 
     https://svn.apache.org/repos/private/committers
 
-One of the first things you should do with your new commit bit is to add yourself to the AUTHORS file on the master branch of the primary CouchDB Git repository.
+One of the first things you should do with your new commit bit is to add yourself to the AUTHORS file on the master branch of the primary CouchDB Git repository. Though please wait for my public announcement before you do so.
 
-Naturally, if you don't understand anything be sure to ask us on the CouchDB dev mailing list. Documentation is maintained by volunteers and hence can be out-of-date or incomplete. Of course, you can now help fix that!
-
-I will announce you to the dev list soon.
+Naturally, if you don't understand anything be sure to ask us on the CouchDB dev mailing list. Documentation is maintained by volunteers and can be out-of-date or incomplete. Please help us fix that!
 
 Thanks,

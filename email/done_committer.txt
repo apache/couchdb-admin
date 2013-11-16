@@ -36,6 +36,10 @@ CouchDB resources are here:
 
     http://wiki.apache.org/couchdb/SourceCode
 
+A Guide for your first steps as a commiter can be found here:
+
+    https://wiki.apache.org/couchdb/Committer_First_Steps
+
 General committers resources are here:
 
     https://svn.apache.org/repos/private/committers

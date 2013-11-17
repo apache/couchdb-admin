@@ -1,0 +1,37 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: l10n@couchdb.apache.org, dev@couchdb.apache.org
+Subject: Invitation to join the CouchDB translation team 
+================================================================================
+
+Dear %NAME%,
+
+You have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate
+your initiative very much and are happy to welcome you in the team.
+
+The translations are beeing made with the help of the ASF translation service. You can find the service here:
+
+	https://translate.apache.org/projects/CouchDB/
+
+We have created an account for you. Here is your yousername:
+
+	Username: %USERNAME%
+
+Before you are abel to login the first time, you have to set a password. To do so, please use the "Lost your Password?" process here:
+
+	https://translate.apache.org/accounts/password/reset/
+
+You will receive an email with a link for resetting your password. Please click the link and follow the instructions.
+
+After you have set a password, please login here:
+
+  	https://translate.apache.org/accounts/login
+
+You are now ready to start with translating. To make the start a bit easier for you, we have created a Wiki page, where you can find useful information regarding your translation work:
+
+	https://wiki.apache.org/couchdb/Translation
+
+If you have any questions, please don't wait to ask on the l10n@couchdb.apache.org mailing-list.
+
+
+On behalf of the CouchDB translation Team,

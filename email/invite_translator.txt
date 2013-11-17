@@ -13,11 +13,11 @@ The translations are beeing made with the help of the ASF translation service. Y
 
 	https://translate.apache.org/projects/CouchDB/
 
-We have created an account for you. Here is your yousername:
+We have created an account for you. Here is your username:
 
-	Username: %USERNAME%
+	%USERNAME%
 
-Before you are abel to login the first time, you have to set a password. To do so, please use the "Lost your Password?" process here:
+Before you are able to login the first time, you have to set a password. To do so, please use the "Lost your Password?" process here:
 
 	https://translate.apache.org/accounts/password/reset/
 

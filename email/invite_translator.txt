@@ -6,32 +6,28 @@ Subject: Invitation to join the CouchDB translation team
 
 Dear %NAME%,
 
-You have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate
-your initiative very much and are happy to welcome you in the team.
+You have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate your initiative very much and would like to invite you to join the team.
 
-The translations are beeing made with the help of the ASF translation service. You can find the service here:
+Before we can create an ASF translation service account for you, we kindly ask you to answer the following questions:
 
-	https://translate.apache.org/projects/CouchDB/
+What is your preferred username?
 
-We have created an account for you. Here is your username:
+	my preferred username is:
 
-	%USERNAME%
+On which language would you like to work?
 
-Before you are able to login the first time, you have to set a password. To do so, please use the "Lost your Password?" process here:
+	I would like to work on:
 
-	https://translate.apache.org/accounts/password/reset/
+Please state that your contributions are under the Apache 2 license:
 
-You will receive an email with a link for resetting your password. Please click the link and follow the instructions.
+	I state, that my contributions are under the Apache 2 license (yes | no):
 
-After you have set a password, please login here:
+Please reply to this email and please write your answers to the above questions simply inline.
 
-  	https://translate.apache.org/accounts/login
+After receiving your email and reviewing your answers with a positive result, we will create an ASF translation service account for you. You will then receive a confirmation email with your username and instructions to setup your password.
 
-You are now ready to start with translating. To make the start a bit easier for you, we have created a Wiki page, where you can find useful information regarding your translation work:
-
-	https://wiki.apache.org/couchdb/Translation
+Please see also https://wiki.apache.org/couchdb/Translation for more information.
 
 If you have any questions, please don't wait to ask on the l10n@couchdb.apache.org mailing-list.
-
 
 On behalf of the CouchDB translation Team,

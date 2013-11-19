@@ -1,0 +1,36 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: l10n@couchdb.apache.org, dev@couchdb.apache.org
+Subject: Confirmation for joining the CouchDB translation team
+================================================================================
+
+Dear %NAME%,
+
+we are pleased to welcome you at the CouchDB translation team.
+
+The translations for CouchDB are being made with the help of the ASF translation service. Please find the service here:
+
+	https://translate.apache.org/projects/CouchDB/
+
+We have created an ASF translation service account for you. Your username is:
+
+	%USERNAME%
+
+Before you are able to login the first time, you have to set a password. To do so, please use the "Lost your Password?" process here:
+
+	https://translate.apache.org/accounts/password/reset/
+
+You will receive an email with a link for resetting your password. Please click the link and follow the instructions.
+
+After you have set a password, please login here:
+
+	https://translate.apache.org/accounts/login
+
+You are now ready to start with translating. To make the start a bit easier for you, we have created a Wiki page, where you can find useful information regarding your translation work:
+
+	https://wiki.apache.org/couchdb/Translation
+
+If you have any questions, please don't wait to ask on the l10n@couchdb.apache.org mailing-list.
+
+
+On behalf of the CouchDB translation Team,

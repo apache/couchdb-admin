@@ -1,0 +1,18 @@
+From: %YOU%
+To: l10n@couchdb.apache.org
+Subject: [ANNOUNCE] %FORMAL_NAME% joined the CouchDB translation team 
+================================================================================
+
+Dear community,
+
+I am pleased to announce that %FORMAL_NAME% has joined the CouchDB translation team.
+
+	ASF translation service username: %POOTLE_USERNAME%
+
+	working on translations for: %LANGUAGES%
+
+	email: %EMAIL%
+
+Please join me in extending a warm welcome to %INFORMAL_NAME%!
+
+On behalf of the CouchDB translation Team,

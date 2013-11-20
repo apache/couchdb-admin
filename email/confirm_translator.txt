@@ -1,6 +1,6 @@
 From: %YOU%
 To: %INDIVIDUAL%
-CC: l10n@couchdb.apache.org, dev@couchdb.apache.org
+CC: private@couchdb.apache.org
 Subject: Confirmation for joining the CouchDB translation team
 ================================================================================
 

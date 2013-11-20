@@ -1,12 +1,12 @@
 From: %YOU%
 To: %INDIVIDUAL%
-CC: l10n@couchdb.apache.org, dev@couchdb.apache.org
+CC: private@couchdb.apache.org
 Subject: Invitation to join the CouchDB translation team 
 ================================================================================
 
 Dear %NAME%,
 
-You have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate your initiative very much and would like to invite you to join the team.
+you have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate your initiative very much and would like to invite you to join the team.
 
 Before we can create an ASF translation service account for you, we kindly ask you to answer the following questions:
 
@@ -22,7 +22,7 @@ Please state that your contributions are under the Apache 2 license:
 
 	I state, that my contributions are under the Apache 2 license (yes | no):
 
-Please reply to this email and please write your answers to the above questions simply inline.
+Please reply to this email and please write your answers to the above questions simply inline. It is important, that you keep private@couchdb.apache.org CC: . So simply reply-to-all.
 
 After receiving your email and reviewing your answers with a positive result, we will create an ASF translation service account for you. You will then receive a confirmation email with your username and instructions to setup your password.
 

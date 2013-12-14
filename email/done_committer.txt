@@ -12,7 +12,9 @@ Please log in and configure your account, if you haven't already done so:
 
     https://id.apache.org/
 
-You can use this to set up SSH, GPG, mail forwarding, etc.
+You can use this to set up SSH, GPG, mail forwarding, etc. You should
+consider creating a dedicated release/code signing GPG key bound to
+your ASF id.
 
 Some further reading:
 

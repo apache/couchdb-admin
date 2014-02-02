@@ -6,28 +6,26 @@ Subject: Invitation to join the CouchDB translation team
 
 Dear %NAME%,
 
-you have given us notice, that you would like to join the Apache CouchDB translation team. We appreciate your initiative very much and would like to invite you to join the team.
+Thank you for indicating that you would like to join the Apache CouchDB translation team.
 
-Before we can create an ASF translation service account for you, we kindly ask you to answer the following questions:
+Before we can create a translation account for you, please answer the following:
 
-What is your preferred username?
+ - What is your preferred username?
 
-	my preferred username is:
+ - Which language would you like to contribute to?
 
-On which language would you like to work?
+ - Are your contributions licensed to the public under the Apache License 2.0?
 
-	I would like to work on:
+(Your answer to the last question must be yes. But we need confirmation.)
 
-Please state that your contributions are under the Apache 2 license:
+Please reply to this email with your answers, making sure to copy private@couchdb.apache.org.
 
-	I state, that my contributions are under the Apache 2 license (yes | no):
+If everything is satisfactory, we will create a translation account for you. You will then receive a confirmation email with your username and further instructions on how to set up your password.
 
-Please reply to this email and please write your answers to the above questions simply inline. It is important, that you keep private@couchdb.apache.org CC: . So simply reply-to-all.
+For more information, see:
 
-After receiving your email and reviewing your answers with a positive result, we will create an ASF translation service account for you. You will then receive a confirmation email with your username and instructions to setup your password.
+    https://wiki.apache.org/couchdb/Translation
 
-Please see also https://wiki.apache.org/couchdb/Translation for more information.
-
-If you have any questions, please don't wait to ask on the l10n@couchdb.apache.org mailing-list.
+If you have any questions, please reply to this mail.
 
 On behalf of the CouchDB translation Team,

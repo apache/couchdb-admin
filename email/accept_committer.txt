@@ -28,7 +28,6 @@ You will receive a few emails from various different people as this process move
 
 In response to this email, please indicate:
 
- * Your prefered ASF user ID
  * Your JIRA username
  * Your wiki username
  * Your IRC nick (if you have one)

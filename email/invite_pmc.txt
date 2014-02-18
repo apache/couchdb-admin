@@ -1,0 +1,34 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: private@couchdb.apache.org
+Subject: Invitation to join the CouchDB PMC
+================================================================================
+
+Dear %NAME%,
+
+The Apache CouchDB Project Management Committee (PMC) would like to invite you to become a member of the CouchDB PMC.
+
+The PMC is responsibile for project oversight.
+
+This includes:
+
+ - Project governance
+ - Community management
+ - Complying with legal guidelines
+ - Dealing with security issues
+ - Branding, events coordination, PR/AR, etc
+ - Electing new committers and PMC members
+
+This does not mean you have to contribute any more than you are already doing, but when you do contribute, we expect your conduct to be exemplary. We hold PMC members to a much higher standard than regular community members.
+
+Being on the PMC means you will be a community gatekeeper. People will look up to you for cues about how to behave. Nobody on the PMC is perfect. But it is important that we all understand the responsibility that we bear, and that we are individually committed to improving ourselves and the project.
+
+We invite people to the PMC who show broad interest and contribution across the project. And this invitation is an acknowledgement we already recognise these qualities in you, and that we trust you in an official capacity.
+
+Please take a moment to familiarise yourself with the PMG guide:
+
+http://www.apache.org/dev/pmc.html
+
+There is no requirement to accept this invitation. You may decline or accept it. But either way, please let us know by "replying all" to this email. If you agree, we will announce your new position on the developer list.
+
+On behalf of the CouchDB PMC,

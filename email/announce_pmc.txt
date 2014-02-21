@@ -7,7 +7,7 @@ Dear community,
 
 I am delighted to announce that %FORMAL_NAME% joins the Apache CouchDB Project Management Committee today.
 
-%INFORMAL_NAME% has made outstanding, sustained contributions to the project. This appointment is an official acknowledgement of his position within the community, and our trust in his ability to provide oversight for the project.
+%INFORMAL_NAME% has made outstanding, sustained contributions to the project. This appointment is an official acknowledgement of their position within the community, and our trust in their ability to provide oversight for the project.
 
 Everybody, please join me in congratulating %INFORMAL_NAME%!
 

@@ -25,9 +25,11 @@ Being on the PMC means you will be a community gatekeeper. People will look up t
 
 We invite people to the PMC who show broad interest and contribution across the project. And this invitation is an acknowledgement we already recognise these qualities in you, and that we trust you in an official capacity.
 
-Please take a moment to familiarise yourself with the PMG guide:
+Please take a moment to familiarise yourself with:
 
 http://www.apache.org/dev/pmc.html
+
+http://apache.org/foundation/marks/responsibility.html
 
 There is no requirement to accept this invitation. You may decline or accept it. But either way, please let us know by "replying all" to this email. If you agree, we will announce your new position on the developer list.
 

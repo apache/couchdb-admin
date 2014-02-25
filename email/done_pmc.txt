@@ -1,0 +1,49 @@
+From: %YOU%
+To: %INDIVIDUAL%
+CC: private@couchdb.apache.org
+Subject: Next steps as a new committer
+================================================================================
+
+Dear %NAME%,
+
+Congratulations in your new role!
+
+Please subscribe to the private list by sending an email to:
+
+    private-subscribe@couchdb.apache.org
+
+The purpose of this list is:
+
+1) To discuss personnel issues
+
+Anything that relates to a specific person, their behaviour, or the position on the project should be discussed in private at first.
+
+It would be very embarrassing, for instance, to suggest someone for election to committer, only to have some serious problem brought up. (Or worse yet, for the problem to not be brought up, for fear of offending that person.)
+
+Similarly, if someone is causing a problem on the lists, it is better to bring it up with them in private first. You can do this by emailing them, and copying the private list, so the the PMC is aware it. If the problem persists, we can discuss in private what to do about it.
+
+2) To discuss sensitive legal issues
+
+Some conversations about branding should be done in private. For example, if we spot someone potentially infringing one of our trademarks, this should be brought up in private. We need to handle these sorts of things delicately. The same is true for most other legal issues.
+
+NOTE: The private list is not to be used for any other matter. It is not the place to discuss community building, project direction, or anything else like that. While the PMC is a management committee, we do all of our management in public. The private list is to be used for sensitive issues only.
+
+You may also want to subscribe to the security list by sending an email to:
+
+    security-subscribe@couchdb.apache.org
+
+The purpose of this list is to handle security issues. If you're interested in helping out with security issues, you are welcome to subscribe. Though, in general, we prefer to keep the number of subscribers as low as possible.
+
+More details on the security team here:
+
+    http://wiki.apache.org/couchdb/Security
+
+The above lists also have corresponding IRC channels:
+
+    #couchdb-private
+
+    #couchdb-security
+
+You have been granted the necessary permissions to join these channels. If you are unable to do so, please respond to this mail.
+
+Thanks,

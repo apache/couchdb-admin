@@ -38,6 +38,12 @@ More details on the security team here:
 
     http://wiki.apache.org/couchdb/Security
 
+You can access the list archives here:
+
+    https://mail-search.apache.org/pmc/private-arch/couchdb-private/
+
+    https://mail-search.apache.org/pmc/private-arch/couchdb-security/
+
 The above lists also have corresponding IRC channels:
 
     #couchdb-private

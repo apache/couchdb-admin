@@ -16,11 +16,11 @@ The purpose of this list is:
 
 1) To discuss personnel issues
 
-Anything that relates to a specific person, their behaviour, or the position on the project should be discussed in private at first.
+Anything that relates to a specific person, their behaviour, or their position on the project should be discussed in private at first.
 
 It would be very embarrassing, for instance, to suggest someone for election to committer, only to have some serious problem brought up. (Or worse yet, for the problem to not be brought up, for fear of offending that person.)
 
-Similarly, if someone is causing a problem on the lists, it is better to bring it up with them in private first. You can do this by emailing them, and copying the private list, so the the PMC is aware it. If the problem persists, we can discuss in private what to do about it.
+Similarly, if someone is causing a problem on the lists, it is better to bring it up with them in private first. You can do this by emailing them, and copying the private list, so the the PMC is aware of it. If the problem persists, we can discuss in private what to do about it.
 
 2) To discuss sensitive legal issues
 

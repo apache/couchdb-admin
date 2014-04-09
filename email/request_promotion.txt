@@ -5,7 +5,7 @@ Subject: [REQUEST] Promote the CouchDB %VERSION% release
 
 Dear community,
 
-Being a volunteer organisation, we rely on you to help us promote releases.
+Being a volunteer organisation, we rely on your help to promote releases.
 
 Here is the official blog post:
 
@@ -15,26 +15,20 @@ Here is the official tweet:
 
     %TWEET_URL%
 
-And Google+ post:
+We also have a Hacker News item. If you're quick, you can find it here:
 
-    %GOOGLE_URL%
+    https://news.ycombinator.com/newest
 
-We also have a Hacker News item:
+And don't forget the rest:
 
-    %HN_URL%
+%REDDIT_URLS%
 
-And several Reddit items:
+%LOBSTERS_URL%
 
-    %REDDIT_URLS%
+%GOOGLE_PLUS_URLS%
 
-Please take a moment to share these links with your friends.
+%FACEBOOK_URL%
 
-Retweet us if you use Twitter, and upvote us if you use Google+, Hacker News, or Reddit.
+Please take a moment to like/upvote these links and share them with your friends. Any help you can provide is here very valuable.
 
-(Note that Hacker News users may want to navigate to the item from the front page. I believe up votes are not counted when you link to an item directly.)
-
-If you like, you could monitor these threads and respond to people with questions. This is a great opportunity for community outreach.
-
-If you have any other promotion you'd like to highlight, please reply to this thread.
-
-Thanks,
+Thank you,

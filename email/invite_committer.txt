@@ -6,13 +6,15 @@ Subject: Invitation to become a CouchDB committer
 
 Dear %NAME%,
 
-The Apache CouchDB Project Management Committee would like to invite you to become a committer. We value your contributions and we are aware that you are committed to the project.
+The Apache CouchDB Project Management Committee (PMC) would like to invite you to become a committer.  Committers are given a binding vote in certain project decsions, as well as write access to public project infrastructure.
 
-Being a committer allows you to contribute more autonomously. For developers, it enables you to more easily make changes and eliminates the need to have contributions reviewed.
+We value your contributions to date, and believe that you are committed to the project. We mean this in the sense of being loyal to the project and its interests. It is a position of trust, not an expectation of activity level.
 
-Whether your work is development related or otherwise, this is a recognition of your contributions and commitment to the project.
+You can read more about the role here:
 
-Being a committer is a position of trust. It in no way obligates you to contribute more. The ASF is a volunteer organisation, and it is entirely normal for people's contribution levels to vary. Obviously, we hope that you will contribute more, but it is not an expectation, or an obligation, and nothing bad will happen if you don't.
+    http://couchdb.apache.org/bylaws.html#committers
+
+Accepting this invitation does not obligate you in any way. The ASF is a volunteer organisation and it is normal for people's contribution levels to vary. We welcome more contributions from you, but there is no expectation, and this position of trust will not expire through inactivity.
 
 Of course, you can decline and continue to contribute as you do now. If you do decline, it will be kept private, unless you say otherwise.
 

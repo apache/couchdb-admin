@@ -66,6 +66,7 @@ cat > $diff_file <<EOF
 ^Only in $tmp_dir/apache-couchdb-$version: THANKS\$
 ^Only in $tmp_dir/apache-couchdb-$version/.*: Makefile.in\$
 ^Only in $tmp_dir/apache-couchdb-$version/bin: couchdb.1\$
+^Only in $tmp_dir/apache-couchdb-$version/build-aux: compile\$
 ^Only in $tmp_dir/apache-couchdb-$version/build-aux: config.guess\$
 ^Only in $tmp_dir/apache-couchdb-$version/build-aux: config.sub\$
 ^Only in $tmp_dir/apache-couchdb-$version/build-aux: depcomp\$

@@ -23,7 +23,7 @@ The release artefacts we are voting on are available here:
 
 Please follow the test procedure here:
 
-    http://wiki.apache.org/couchdb/Test_procedure
+    https://cwiki.apache.org/confluence/display/COUCHDB/Testing+a+Source+Release
 
 Please remember that "rc.%CANDIDATE%" is an annotation. If the vote passes, these artefacts will be released as Apache CouchDB %VERSION%.
 

@@ -8,45 +8,27 @@ Dear %NAME%,
 
 As you know, %ID% is your new committer account.
 
-Please log in and configure your account, if you haven't already done so:
+You now have write access to certain parts of the ASF.
 
-    https://id.apache.org/
+A guide for your first steps as a committer can be found here:
 
-You can use this to set up SSH, GPG, mail forwarding, etc. You should
-consider creating a dedicated release/code signing GPG key bound to
-your ASF id.
-
-Some further reading:
-
-    http://www.apache.org/foundation/how-it-works.html
-
-    http://www.apache.org/dev/new-committers-guide.html
-
-    http://www.apache.org/dev/committers.html
-
-More resources here:
-
-    http://www.apache.org/dev/
+    https://cwiki.apache.org/confluence/display/COUCHDB/Committer+First+Steps
 
 The CouchDB community guide can be found here:
 
-    http://wiki.apache.org/couchdb/Community_Guide
-
-You now have commit access to certain parts of the ASF.
-
-CouchDB resources are here:
-
-    http://wiki.apache.org/couchdb/SourceCode
-
-A Guide for your first steps as a commiter can be found here:
-
-    https://wiki.apache.org/couchdb/Committer_First_Steps
+    https://cwiki.apache.org/confluence/display/COUCHDB/Community+Guide
 
 General committers resources are here:
 
     https://svn.apache.org/repos/private/committers
 
-One of the first things you should do with your new commit bit is to add yourself to the AUTHORS file on the master branch of the primary CouchDB Git repository. Furthermore, please add yourself to the committers list at https://wiki.apache.org/couchdb/Committers. Though please wait for my public announcement before you do so.
+We abide by a code of conduct and a set of bylaws. You should familiarise yourself with both documents. As a committer, people will look to you for cues about how to act. Please help us set the right standard.
+
+View those documents here:
+
+    http://couchdb.apache.org/conduct.html
+
+    http://couchdb.apache.org/bylaws.html
 
 Naturally, if you don't understand anything be sure to ask us on the CouchDB dev mailing list. Documentation is maintained by volunteers and can be out-of-date or incomplete. Please help us fix that!
 

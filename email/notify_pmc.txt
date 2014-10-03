@@ -1,0 +1,11 @@
+From: %YOU%
+To: board@apache.org
+CC: private@couchdb.apache.org
+Subject: [NOTICE] %NAME% for CouchDB PMC
+================================================================================
+
+Dear Board,
+
+CouchDB proposes to invite %NAME% (%ASF_ID%) to join the PMC.
+
+Thanks,

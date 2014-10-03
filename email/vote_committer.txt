@@ -1,16 +1,22 @@
 From: %YOU%
 To: private@couchdb.apache.org
-Subject: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as committer)
+Subject: [VOTE] Elect %NAME% as committer
 ================================================================================
 
 Dear PMC,
 
 I would like to elect %NAME% as committer.
 
-I believe we reached consensus on the corresponding [DISCUSS] thread.
+%REASONS%
+
+A successful election would signify that the PMC trusts this person to be loyal to the project and its interestes. This includes a binding vote in project decisions and write access to project infrastructure.
+
+Required reading:
+
+    http://couchdb.apache.org/bylaws.html#committers
+
+Per the bylaws, this vote uses the lazy majority approval model, meaning that three binding +1 votes and more binding +1 votes than -1 votes are needed.
 
 Please cast your votes now.
 
 Thanks,
-
-%DISCUSS_THREAD%

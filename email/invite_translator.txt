@@ -1,7 +1,7 @@
 From: %YOU%
 To: %INDIVIDUAL%
 CC: private@couchdb.apache.org
-Subject: Invitation to join the CouchDB translation team 
+Subject: Invitation to join the CouchDB translation team
 ================================================================================
 
 Dear %NAME%,
@@ -24,7 +24,7 @@ If everything is satisfactory, we will create a translation account for you. You
 
 For more information, see:
 
-    https://wiki.apache.org/couchdb/Translation
+    https://cwiki.apache.org/confluence/display/COUCHDB/Translation+Guide
 
 If you have any questions, please reply to this mail.
 

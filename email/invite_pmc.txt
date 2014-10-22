@@ -8,7 +8,7 @@ Dear %NAME%,
 
 The Apache CouchDB Project Management Committee (PMC) would like to invite you to become a member of the CouchDB PMC.
 
-The PMC is responsibile for project oversight.
+The PMC is responsible for project oversight.
 
 This includes:
 

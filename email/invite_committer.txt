@@ -18,7 +18,7 @@ Please also familiarise yourself with our code of conduct:
 
     http://couchdb.apache.org/conduct.html
 
-While these documents apply to all community members, by accepting this invitation you indicating that you have read and agree to them.
+While these documents apply to all community members, by accepting this invitation you are indicating that you have read and agree to them.
 
 Accepting this invitation does not obligate you to contribute. The ASF is a volunteer organisation and it is normal for people's contribution levels to vary. We welcome more contributions from you, but there is no expectation, and this position of trust will not expire through inactivity.
 

@@ -10,11 +10,17 @@ The Apache CouchDB Project Management Committee (PMC) would like to invite you t
 
 We value your contributions to date, and believe that you are committed to the project. We mean this in the sense of being loyal to the project and its interests. It is a position of trust, not an expectation of activity level.
 
-You can read more about the role here:
+You can read more about the role in our bylaws:
 
     http://couchdb.apache.org/bylaws.html#committers
 
-Accepting this invitation does not obligate you in any way. The ASF is a volunteer organisation and it is normal for people's contribution levels to vary. We welcome more contributions from you, but there is no expectation, and this position of trust will not expire through inactivity.
+Please also familiarise yourself with our code of conduct:
+
+    http://couchdb.apache.org/conduct.html
+
+While these documents apply to all community members, by accepting this invitation you indicating that you have read and agree to them.
+
+Accepting this invitation does not obligate you to contribute. The ASF is a volunteer organisation and it is normal for people's contribution levels to vary. We welcome more contributions from you, but there is no expectation, and this position of trust will not expire through inactivity.
 
 Of course, you can decline and continue to contribute as you do now. If you do decline, it will be kept private, unless you say otherwise.
 

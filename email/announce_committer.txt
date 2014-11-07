@@ -13,7 +13,7 @@ I am pleased to announce that the CouchDB Project Management Committee has elect
 
     Twitter: %TWITTER%
 
-Committers are given a binding vote in certain project decsions, as well as write access to public project infrastructure.
+Committers are given a binding vote in certain project decisions, as well as write access to public project infrastructure.
 
 This election was made in recognition of %INFORMAL_NAME%'s commitment to the project. We mean this in the sense of being loyal to the project and its interests.
 

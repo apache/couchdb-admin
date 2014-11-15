@@ -1,0 +1,17 @@
+{
+  "name": "board-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "I'm helping to prepare board reports",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Kowalski <rok@kowalski.gd>",
+  "license": "Apache License, Version 2.0",
+  "dependencies": {
+    "async": "0.9.0",
+    "cheerio": "0.18.0",
+    "request": "2.48.0"
+  }
+}

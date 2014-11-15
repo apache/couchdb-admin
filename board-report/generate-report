@@ -1,0 +1,112 @@
+#!/usr/bin/env node
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not
+// use this file except in compliance with the License. You may obtain a copy of
+// the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+// WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+// License for the specific language governing permissions and limitations under
+// the License.
+
+const crawler = require('./lib/index.js');
+
+const arg = process.argv[2];
+
+if (arg === '-h' || arg === '--help') {
+  return printUsage();
+}
+
+if (!validArg(arg)) {
+  console.log('Error: format is YYYYMM-YYYYMM - see ' +
+    "'generate-report --help'");
+  return;
+}
+
+const template = '{{count}} {{messages}} since {{month}} ' +
+  '(DIFF change)';
+
+crawler(arg, function (err, data) {
+  if (err) {
+    logLine('Error:');
+    console.log(err);
+    return;
+  }
+
+  logLine('Your message counts:');
+  data.forEach(function (el) {
+    const month = getStartMonthAsWord(arg),
+          messageCount = +el[1].replace(',', ''),
+          message = messageCount > 1 ? 'messages' : 'message',
+          wikitext = template
+            .replace('{{count}}', el[1])
+            .replace('{{month}}', month)
+            .replace('{{messages}}', message);
+
+    console.log(el[0] + ':');
+    logLine(wikitext);
+  });
+  console.log('Happy reporting! :)');
+});
+
+function logLine (line) {
+  console.log(line + '\n');
+}
+
+function getStartMonthAsWord (date) {
+  const i = parseInt(date.substr(4, 2), 10);
+  return getMonthAsWord(i);
+}
+
+function getMonthAsWord (i) {
+  return [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ][i - 1];
+}
+
+function validArg (arg) {
+  if (!arg) {
+    return false;
+  }
+
+  const dates = arg.split('-');
+
+  if (dates.length !== 2) {
+    return false;
+  }
+
+  if (dates[0].length !== 6 || dates[1].length !== 6) {
+    return false;
+  }
+
+  if (Number.isNaN(+dates[0]) || Number.isNaN(+dates[1])) {
+    return false;
+  }
+
+  return true;
+}
+
+function printUsage () {
+  logLine('usage: generate-report <daterange> | --help');
+  console.log('If you are reporting for February 2014, for instance,');
+  logLine('set the date range to: 201311-201402');
+  console.log('guide:');
+  console.log('https://cwiki.apache.org/confluence/display' +
+    '/COUCHDB/Guide');
+  console.log('template:');
+  console.log('https://cwiki.apache.org/confluence/display' +
+    '/COUCHDB/Template');
+}

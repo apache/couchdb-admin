@@ -11,41 +11,46 @@
 // License for the specific language governing permissions and limitations under
 // the License.
 
-const crawler = require('./lib/index.js');
+const crawler = require('./lib/index.js'),
+      argument = require('./lib/argument.js');
 
 const arg = process.argv[2];
+const template = '{{count}} {{messages}} since {{month}} ' +
+  '({{diff}} change)';
 
 if (arg === '-h' || arg === '--help') {
   return printUsage();
 }
 
-if (!validArg(arg)) {
-  console.log('Error: format is YYYYMM-YYYYMM - see ' +
+if (!argument.validArg(arg)) {
+  console.error('Error: format is YYYYMM - see ' +
     "'generate-report --help'");
+  process.exit(1);
   return;
 }
 
-const template = '{{count}} {{messages}} since {{month}} ' +
-  '(DIFF change)';
-
-crawler(arg, function (err, data) {
+var monthsForDiff = 3
+const queryParams = argument.prepareQueryParams(arg);
+crawler(queryParams, monthsForDiff, function (err, data) {
   if (err) {
     logLine('Error:');
-    console.log(err);
+    console.error(err);
+    process.exit(1);
     return;
   }
 
   logLine('Your message counts:');
-  data.forEach(function (el) {
-    const month = getStartMonthAsWord(arg),
-          messageCount = +el[1].replace(',', ''),
+  Object.keys(data).forEach(function (el) {
+    const month = argument.getMonthAsWordFromNow(arg, monthsForDiff),
+          messageCount = data[el].curr,
           message = messageCount > 1 ? 'messages' : 'message',
           wikitext = template
-            .replace('{{count}}', el[1])
+            .replace('{{count}}', messageCount)
             .replace('{{month}}', month)
-            .replace('{{messages}}', message);
+            .replace('{{messages}}', message)
+            .replace('{{diff}}', data[el].diff);
 
-    console.log(el[0] + ':');
+    console.log(el + ':');
     logLine(wikitext);
   });
   console.log('Happy reporting! :)');
@@ -55,54 +60,10 @@ function logLine (line) {
   console.log(line + '\n');
 }
 
-function getStartMonthAsWord (date) {
-  const i = parseInt(date.substr(4, 2), 10);
-  return getMonthAsWord(i);
-}
-
-function getMonthAsWord (i) {
-  return [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ][i - 1];
-}
-
-function validArg (arg) {
-  if (!arg) {
-    return false;
-  }
-
-  const dates = arg.split('-');
-
-  if (dates.length !== 2) {
-    return false;
-  }
-
-  if (dates[0].length !== 6 || dates[1].length !== 6) {
-    return false;
-  }
-
-  if (Number.isNaN(+dates[0]) || Number.isNaN(+dates[1])) {
-    return false;
-  }
-
-  return true;
-}
-
 function printUsage () {
-  logLine('usage: generate-report <daterange> | --help');
+  logLine('usage: generate-report <date> | --help');
   console.log('If you are reporting for February 2014, for instance,');
-  logLine('set the date range to: 201311-201402');
+  logLine('set the date to: 201402');
   console.log('guide:');
   console.log('https://cwiki.apache.org/confluence/display' +
     '/COUCHDB/Guide');

@@ -12,7 +12,9 @@
 
 const async = require('async'),
       request = require('request'),
-      cheerio = require('cheerio');
+      cheerio = require('cheerio'),
+      assert = require('assert'),
+      argument = require('./argument.js');
 
 const urlTemplate = 'http://markmail.org/search/?q=list%3A' +
   'org.apache.{{listname}}%20date%3A{{date}}';
@@ -28,24 +30,100 @@ const lists = [
   'couchdb-marketing'
 ];
 
-function getMessageCounts (date, cb) {
-  const listUrls = lists.map(function (list) {
+function api (queryParams, timeframe, cb) {
+  assert.ok(queryParams.queryCurr, 'queryParams must be defined');
+  assert.ok(queryParams.queryDiff, 'queryParams must be defined');
+  assert.equal(typeof timeframe, 'number',
+    'timeframe must be a number');
+  assert.equal(typeof cb, 'function', 'callback must a a function');
+
+  const listUrlsCurr = getUrls(queryParams.queryCurr),
+        listUrlsDiff = getUrls(queryParams.queryDiff);
+
+  console.log(listUrlsCurr);
+  console.log(listUrlsDiff);
+
+  async.parallel({
+    current: function (cb) {
+      getMessageCounts(listUrlsCurr, cb);
+    },
+    diff: function (cb) {
+      getMessageCounts(listUrlsDiff, cb);
+    }
+  },
+  function (err, res) {
+    const data = joinDiffWithCurrent(res);
+    cb(null, data);
+  });
+}
+
+function joinDiffWithCurrent (structure) {
+  const curr = structure.current,
+        diff = structure.diff;
+
+  return curr.reduce(function (acc, el) {
+    const name = el[0],
+          count = el[1],
+          countOld = pick(name, diff);
+
+    acc[name] = {
+      curr: normalize(count),
+      old: normalize(countOld),
+      diff: getDiffString(count, countOld)
+    };
+
+    return acc;
+  }, {});
+}
+
+function pick (element, structure) {
+  return structure.reduce(function (acc, row) {
+    if (row[0] === element) {
+      acc = acc + row[1];
+    }
+    return acc;
+  }, 0);
+}
+
+function getDiffString (count, countOld) {
+  const result = normalize(countOld) - normalize(count);
+
+  if (result >= 0) {
+    return '+' + result;
+  }
+  return '' + result;
+}
+
+function normalize (string) {
+  return parseInt(string.replace(',', ''), 10);
+}
+
+function getUrls (date) {
+  return lists.map(function (list) {
     return urlTemplate
       .replace('{{date}}', date)
       .replace('{{listname}}', list);
   });
+}
 
-  async.map(listUrls, request, function (err, results) {
+function requestWithOptions (url, cb) {
+  request({
+    uri: url,
+    pool: {
+      maxSockets: Infinity
+    }
+  }, function (err, res, body) {
+    cb(err, body);
+  })
+}
+
+function getMessageCounts (urlList, cb) {
+  async.map(urlList, requestWithOptions, function (err, results) {
     if (err) {
       return cb(err);
     }
 
-    const bodies = results.reduce(function (acc, cur) {
-      acc.push(cur.request.req.res.body);
-      return acc;
-    }, []);
-
-    const res = bodies.map(function (markup) {
+    const res = results.map(function (markup) {
       const $ = cheerio.load(markup),
             count = $('#lists .count').text(),
             list = $('#lists a').text().replace('org.apache.couchdb.', '');
@@ -57,4 +135,4 @@ function getMessageCounts (date, cb) {
   });
 }
 
-module.exports = getMessageCounts;
+module.exports = api;

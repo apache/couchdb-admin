@@ -3,6 +3,7 @@
 ## Usage
 
 ```shell
+npm i -g
 generate-report <daterange> | --help
 ```
 

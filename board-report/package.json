@@ -1,9 +1,10 @@
 {
-  "name": "board-report",
+  "name": "generate-report",
   "version": "1.0.0",
   "private": true,
   "description": "I'm helping to prepare board reports",
   "main": "lib/index.js",
+  "bin": "./generate-report",
   "scripts": {
     "test": "mocha -R spec"
   },

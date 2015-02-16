@@ -15,7 +15,7 @@ const crawler = require('./lib/index.js'),
       argument = require('./lib/argument.js');
 
 const arg = process.argv[2];
-const template = '{{count}} {{messages}} since {{month}} ' +
+const template = '{{count}} {{messages}} since end of {{month}} ' +
   '({{diff}} change)';
 
 if (arg === '-h' || arg === '--help') {
@@ -41,7 +41,7 @@ crawler(queryParams, monthsForDiff, function (err, data) {
 
   logLine('Your message counts:');
   Object.keys(data).forEach(function (el) {
-    const month = argument.getMonthAsWordFromNow(arg, monthsForDiff),
+    const month = argument.getMonthAsWordFromNow(arg, monthsForDiff + 1),
           messageCount = data[el].curr,
           message = messageCount > 1 ? 'messages' : 'message',
           wikitext = template

@@ -29,14 +29,14 @@ describe('arguments', function () {
   it('prepares query parameters', function () {
     const queryParams = argument.prepareQueryParams('201411');
 
-    assert.equal(queryParams.queryCurr, '201408-201411');
-    assert.equal(queryParams.queryDiff, '201405-201408');
+    assert.equal(queryParams.queryCurr, '201408-201410');
+    assert.equal(queryParams.queryDiff, '201405-201407');
   });
 
   it('prepares urls for the current and the diff', function () {
     const queryParams = argument.prepareQueryParams('201411');
 
-    assert.equal(queryParams.queryCurr, '201408-201411');
-    assert.equal(queryParams.queryDiff, '201405-201408');
+    assert.equal(queryParams.queryCurr, '201408-201410');
+    assert.equal(queryParams.queryDiff, '201405-201407');
   });
 });

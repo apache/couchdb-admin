@@ -14,6 +14,7 @@ const moment = require('moment');
 
 exports.prepareQueryParams = prepareQueryParams;
 function prepareQueryParams (arg) {
+  console.log(arg)
   const startEnd = getStartEndDates(arg, 3);
         startAsString = startEnd[0].format('YYYYMM'),
         diffStartEnd = getStartEndDates(startAsString, 3);
@@ -50,6 +51,7 @@ function getMonthAsWordFromNow (reportEnd, time) {
   return moment(inter, 'YYYYMM').format('MMMM');
 }
 
+exports.getMonthAsWord = getMonthAsWord;
 function getMonthAsWord (reportEnd) {
   return moment(reportEnd, 'YYYYMM').format('MMMM');
 }
@@ -60,8 +62,7 @@ function formatQuery (startEnd) {
 }
 
 function getStartEndDates (arg, time) {
-  const end = moment(arg, 'YYYYMM'),
+  const end = moment(arg, 'YYYYMM').subtract(1, 'month'),
         start = moment(arg, 'YYYYMM').subtract(time, 'months');
-
   return [start, end];
 }

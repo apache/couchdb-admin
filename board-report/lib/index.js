@@ -16,8 +16,9 @@ const async = require('async'),
       assert = require('assert'),
       argument = require('./argument.js');
 
-const urlTemplate = 'http://markmail.org/search/?q=list%3A' +
-  'org.apache.{{listname}}%20date%3A{{date}}';
+const urlPrefix = 'http://markmail.org/search/?q=list%3Aorg.apache.';
+const urlTemplate = urlPrefix + '{{listname}}%20date%3A{{date}}';
+
 
 const lists = [
   'couchdb-announce',
@@ -39,9 +40,6 @@ function api (queryParams, timeframe, cb) {
 
   const listUrlsCurr = getUrls(queryParams.queryCurr),
         listUrlsDiff = getUrls(queryParams.queryDiff);
-
-  console.log(listUrlsCurr);
-  console.log(listUrlsDiff);
 
   async.parallel({
     current: function (cb) {
@@ -86,7 +84,7 @@ function pick (element, structure) {
 }
 
 function getDiffString (count, countOld) {
-  const result = normalize(countOld) - normalize(count);
+  const result = normalize(count) - normalize(countOld);
 
   if (result >= 0) {
     return '+' + result;
@@ -95,6 +93,9 @@ function getDiffString (count, countOld) {
 }
 
 function normalize (string) {
+  if (!string) {
+    string = '0';
+  }
   return parseInt(string.replace(',', ''), 10);
 }
 
@@ -113,8 +114,12 @@ function requestWithOptions (url, cb) {
       maxSockets: Infinity
     }
   }, function (err, res, body) {
-    cb(err, body);
+    cb(err, [url, body]);
   })
+}
+
+function normalizeListName (list) {
+  return list.replace(urlPrefix, '').split('%20date')[0];
 }
 
 function getMessageCounts (urlList, cb) {
@@ -122,12 +127,10 @@ function getMessageCounts (urlList, cb) {
     if (err) {
       return cb(err);
     }
-
-    const res = results.map(function (markup) {
-      const $ = cheerio.load(markup),
+    const res = results.map(function (element) {
+      const $ = cheerio.load(element[1]),
             count = $('#lists .count').text(),
-            list = $('#lists a').text().replace('org.apache.couchdb.', '');
-
+            list = normalizeListName(element[0]);
       return [list, count];
     });
 

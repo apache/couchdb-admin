@@ -6,7 +6,7 @@ Subject: Invitation to become a CouchDB committer
 
 Dear %NAME%,
 
-The Apache CouchDB Project Management Committee (PMC) would like to invite you to become a committer.  Committers are given a binding vote in certain project decsions, as well as write access to public project infrastructure.
+The Apache CouchDB Project Management Committee (PMC) would like to invite you to become a committer. Committers are given a binding vote in certain project decisions, as well as write access to public project infrastructure.
 
 We value your contributions to date, and believe that you are committed to the project. We mean this in the sense of being loyal to the project and its interests. It is a position of trust, not an expectation of activity level.
 

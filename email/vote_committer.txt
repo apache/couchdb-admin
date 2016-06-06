@@ -9,7 +9,7 @@ I would like to elect %NAME% as committer.
 
 %REASONS%
 
-A successful election would signify that the PMC trusts this person to be loyal to the project and its interestes. This includes a binding vote in project decisions and write access to project infrastructure.
+A successful election would signify that the PMC trusts this person to be loyal to the project and its interests. This includes a binding vote in project decisions and write access to project infrastructure.
 
 Required reading:
 

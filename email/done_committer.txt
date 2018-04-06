@@ -14,11 +14,17 @@ A guide for your first steps as a committer can be found here:
 
     https://cwiki.apache.org/confluence/display/COUCHDB/Committer+First+Steps
 
+If you intend to contribute to Apache CouchDB's version-controlled
+repositories, and have a GitHub account, We strongly urge you to complete
+the GitHub/ASF integration process here:
+
+    https://gitbox.apache.org/setup/
+
 The CouchDB community guide can be found here:
 
     https://cwiki.apache.org/confluence/display/COUCHDB/Community+Guide
 
-General committers resources are here:
+General ASF committers resources are here:
 
     https://svn.apache.org/repos/private/committers
 

@@ -9,9 +9,9 @@ Apache CouchDB %VERSION% has been released and is available for download.
 
 Apache CouchDB™ lets you access your data where you need it. The Couch Replication Protocol is implemented In a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
 
-Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary for all your data storage needs.
+Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary data for all your data storage needs.
 
-The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling, offline-firstuser-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling, offline-first user-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
 
     https://couchdb.apache.org/#download
 

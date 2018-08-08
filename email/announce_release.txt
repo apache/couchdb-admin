@@ -7,9 +7,9 @@ Dear community,
 
 Apache CouchDB %VERSION% has been released and is available for download.
 
-CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, via HTTP. Query, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can distribute your data, efficiently using CouchDB’s incremental replication. CouchDB supports master-master setups with automatic conflict detection.
+Apache CouchDB™ lets you access your data where you need it by defining the Couch Replication Protocol that is implemented by a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers. Software that is compatible with the Couch Replication Protocol include: PouchDB & Cloudant.
 
-CouchDB comes with a suite of features, such as on-the-fly document transformation and real-time change notifications, that make web development a breeze. It even comes with an easy to use web administration console, served directly out of CouchDB! We care a lot about distributed scaling. CouchDB is highly available and partition tolerant, but is also eventually consistent. And we care a lot about your data. CouchDB has a fault-tolerant storage engine that puts the safety of your data first.
+Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary for all your data storage needs. The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling, offline-firstuser-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
 
 Download your copy here:
 

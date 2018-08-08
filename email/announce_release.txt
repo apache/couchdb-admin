@@ -1,5 +1,5 @@
 From: %YOU%
-To: announce@apache.org, announce@couchdb.apache.org, user@couchdb.apache.org, dev@couchdb.apache.org, marketing@couchdb.apache.org
+1;95;0cTo: announce@apache.org, announce@couchdb.apache.org, user@couchdb.apache.org, dev@couchdb.apache.org, marketing@couchdb.apache.org
 Subject: [ANNOUNCE] Apache CouchDB %VERSION% released
 =======================================================================
 
@@ -7,11 +7,11 @@ Dear community,
 
 Apache CouchDB %VERSION% has been released and is available for download.
 
-Apache CouchDB™ lets you access your data where you need it by defining the Couch Replication Protocol that is implemented by a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers. Software that is compatible with the Couch Replication Protocol include: PouchDB & Cloudant.
+Apache CouchDB™ lets you access your data where you need it. The Couch Replication Protocol is implemented In a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
 
-Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary for all your data storage needs. The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling, offline-firstuser-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary for all your data storage needs.
 
-Download your copy here:
+The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling, offline-firstuser-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
 
     https://couchdb.apache.org/#download
 

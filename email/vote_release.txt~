@@ -11,18 +11,15 @@ Changes since last round:
 
  * https://github.com/apache/couchdb/compare/%OLDTAG%...%NEWTAG%
 
-Candidate release notes:
-
- * https://docs.couchdb.org/en/latest/whatsnew/%VERSION%.html
-
 We encourage the whole community to download and test these release artefacts so that any critical issues can be resolved before the release is made. Everyone is free to vote on this release, so dig right in!
 
 The release artefacts we are voting on are available here:
 
     wget %CANDIDATE_URL%/%PACKAGE%.tar.gz
     wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.asc
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.md5
+    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.sha1
     wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.sha256
-    wget %CANDIDATE_URL%/%PACKAGE%.tar.gz.sha512
 
 Please follow the test procedure here:
 

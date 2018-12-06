@@ -21,9 +21,17 @@ CouchDB %VERSION% is a {feature|maintenance} release, and was originally publish
 
 The community would like to thank all contributors for their part in making this release, from the smallest bug report or patch to major contributions in code, design, or marketing, we couldn’t have done it without you!
 
-The release notes follow.
+See the official release notes document for an exhaustive list of all changes:
 
-%RELEASE_NOTES%
+    http://docs.couchdb.org/en/stable/whatsnew/%SHORTVERSION%.html
+
+Release Notes highlights:
+
+  - Point 1
+
+  - Point 2
+
+  - Point 3
 
 On behalf of the CouchDB PMC,
 %YOU%

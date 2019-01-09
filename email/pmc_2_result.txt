@@ -1,6 +1,6 @@
 From: %YOU%
 To: private@couchdb.apache.org
-Subject: [RESULT] (Was: Re: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as committer))
+Subject: [RESULT] (Was: Re: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as PMC member))
 ================================================================================
 
 Dear PMC, 
@@ -18,4 +18,3 @@ The vote is %RESULT%.
 
 Thanks,
 
-%VOTE_THREAD%

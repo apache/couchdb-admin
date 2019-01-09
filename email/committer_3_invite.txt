@@ -26,4 +26,22 @@ Of course, you can decline and continue to contribute as you do now. If you do d
 
 Either way, please let us know in reply to the private@couchdb.apache.org list only. If you accept, we will announce your new position on the dev@couchdb.apache.org list after your account is created.
 
+[CHECK http://people.apache.org/committer-index.html - IF PRESENT, USE THIS PARAGRAPH]
+If you accept, since you already have an Apache id, the PMC will grant you write access to the repository.
+
+[CHECK http://people.apache.org/unlistedclas.html - IF PRESENT, USE THIS PARAGRAPH]
+If you accept, since you already have an iCLA on file, the PMC will request an Apache id for you. In your response, please choose an id that is not already in use. See http://people.apache.org/committer-index.html
+]
+
+[OTHERWISE, USE THIS SECTION]
+If you accept, the next step is to register an iCLA:
+
+  1. Details of the iCLA and the forms are found here: http://www.apache.org/licenses/#clas There is also an online form for generating your iCLA: https://asf.icla.online/
+
+  2. Instructions for its completion and return to the Secretary of the ASF are found at http://www.apache.org/licenses/#submitting . Do not submit ICLAs to anyone but secretary, but please do cc: [private@couchdb.apache.org]
+
+  3. When you transmit the completed iCLA, request to notify Apache CouchDB and choose a unique Apache id. Look to see if your preferred id is already taken at http://people.apache.org/committer-index.html . This will allow the Secretary to notify the PMC when your iCLA has been recorded.
+
+  4. Be sure to reply to this email and let us know you've completed your iCLA.
+
 On behalf of the CouchDB PMC,

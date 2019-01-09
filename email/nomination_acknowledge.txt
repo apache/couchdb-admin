@@ -12,6 +12,6 @@ Your nomination has been acknowledged.
 
 Please see the community guide for more information:
 
-    http://wiki.apache.org/couchdb/Community_Guide#Nominating_a_Committer
+    https://cwiki.apache.org/confluence/display/COUCHDB/Community+Guide
 
 On behalf of the CouchDB PMC,

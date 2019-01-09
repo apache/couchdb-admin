@@ -10,31 +10,22 @@ As you know, %ID% is your new committer account.
 
 You now have write access to certain parts of the ASF.
 
-A guide for your first steps as a committer can be found here:
+Don't forget to work your way through the steps here:
 
-    https://cwiki.apache.org/confluence/display/COUCHDB/Committer+First+Steps
+    http://s.apache.org/couchdb-committer-first-steps
 
-If you intend to contribute to Apache CouchDB's version-controlled
-repositories, and have a GitHub account, We strongly urge you to complete
-the GitHub/ASF integration process here:
-
-    https://gitbox.apache.org/setup/
-
-The CouchDB community guide can be found here:
-
-    https://cwiki.apache.org/confluence/display/COUCHDB/Community+Guide
-
-General ASF committers resources are here:
-
-    https://svn.apache.org/repos/private/committers
+While all of the items are important, we want to remind you of three specific
+ones that are key.
 
 We abide by a code of conduct and a set of bylaws. You should familiarise yourself with both documents. As a committer, people will look to you for cues about how to act. Please help us set the right standard.
-
-View those documents here:
 
     http://couchdb.apache.org/conduct.html
 
     http://couchdb.apache.org/bylaws.html
+
+You will want to complete the Git / GitHub / ASF integration step for the best experience when committing to our repositories:
+
+    https://gitbox.apache.org/setup/
 
 Naturally, if you don't understand anything be sure to ask us on the CouchDB dev mailing list. Documentation is maintained by volunteers and can be out-of-date or incomplete. Please help us fix that!
 

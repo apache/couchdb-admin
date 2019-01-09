@@ -1,0 +1,36 @@
+From: %YOU%
+To: dev@couchdb.apache.org
+Subject: [DISCUSS] Release Apache CouchDB %VERSION%
+================================================================================
+
+Dear community,
+
+I would like to propose that we release Apache CouchDB %VERSION%.
+
+[IF THIS IS ANY RC OTHER THAN -RC1]
+Changes since the last round:
+
+    https://github.com/apache/couchdb/compare/#.#.#-RC#...#.#.#-RC#
+
+[FOR ALL RELEASES]
+Candidate release notes:
+
+    https://docs.couchdb.org/en/latest/whatsnew/#.#.html
+
+We encourage the whole community to download and test these release artefacts so that any critical issues can be resolved before the release is made. Everyone is free to vote on this release, so dig right in! (Only PMC members have binding votes, but they depend on community feedback to gauge if an official release is ready to be made.)
+
+The release artefacts we are voting on are available here:
+
+    https://dist.apache.org/repos/dist/dev/couchdb/source/#.#.#/rc.#/
+
+There, you will find a tarball, a GPG signature, and SHA256/SHA512 checksums.
+
+Please follow the test procedure here:
+
+    https://cwiki.apache.org/confluence/display/COUCHDB/Testing+a+Source+Release
+
+Please remember that "RC#" is an annotation. If the vote passes, these artefacts will be released as Apache CouchDB %VERSION%.
+
+Please cast your votes now.
+
+Thanks,

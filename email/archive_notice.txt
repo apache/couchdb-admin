@@ -1,0 +1,26 @@
+From: %YOU%
+To: dev@couchdb.apache.org
+Subject: [NOTICE] Archive Apache CouchDB %VERSION%
+================================================================================
+
+Dear community,
+
+I would like to archive Apache CouchDB %VERSION%.
+
+Apache release policy states: "Each project's distribution directory SHOULD contain the latest release in each branch that is currently under development. When development ceases on a version branch, releases of that branch SHOULD be removed."
+
+[IF A BRANCH IS KILLED:]
+As development on the #.#.# branch has ended, it is time to archive this release.
+
+[IF A VERSION IS AN OLD BRANCH VERSION]
+Since we've released #.#.#, it is time to archive #.#.#-1.
+
+Archiving this release means that we no longer support it, and we will remove any references to it from our website and our wiki. However, the original files will still be available to anyone browsing the release archives at:
+
+    http://archive.apache.org/dist/couchdb/
+
+    http://wiki.apache.org/couchdb/CurrentReleases#Archived_Releases
+
+You do not need to respond if you are in agreement. If there is no response in 72 hours, I will assume lazy consensus. If we reach consensus, I archive the release.
+
+Thanks,

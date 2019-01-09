@@ -9,7 +9,7 @@ This is a request to prepare binaries for the %VERSION%-rc.%CANDIDATE% release.
 
 Please follow the release procedure:
 
-    http://wiki.apache.org/couchdb/Release_Procedure#Preparing_the_Binary_Packages
+    https://cwiki.apache.org/confluence/display/COUCHDB/Release+Procedure#ReleaseProcedure-PreparingthemacOSorWindowsBinaryPackages
 
 Everyone is welcome to prepare binaries for this release.
 

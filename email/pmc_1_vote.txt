@@ -1,0 +1,22 @@
+From: %YOU%
+To: private@couchdb.apache.org
+Subject: [VOTE] Elect %NAME% as PMC member
+================================================================================
+
+Dear PMC,
+
+I would like to elect %NAME% as a PMC member.
+
+%REASONS%
+
+A successful election would signify that the PMC trusts this person sufficiently to represent the project at the highest level, and to participate in all project decision-making activities.
+
+Required reading:
+
+    http://couchdb.apache.org/bylaws.html#pmc
+
+Per the bylaws, this vote uses the lazy 2/3 majority approval model, meaning that three binding +1 votes and twice as many binding +1 votes as binding -1 votes are needed.
+
+Please cast your votes now.
+
+Thanks,

@@ -5,9 +5,9 @@ Subject: [ANNOUNCE] Apache CouchDB %VERSION% released
 
 Dear community,
 
-Apache CouchDB %VERSION% has been released and is available for download.
+Apache CouchDB® %VERSION% has been released and is available for download.
 
-Apache CouchDB™ lets you access your data where you need it. The Couch Replication Protocol is implemented in a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
+Apache CouchDB® lets you access your data where you need it. The Couch Replication Protocol is implemented in a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
 
 Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary data for all your data storage needs.
 
@@ -34,4 +34,3 @@ Release Notes highlights:
   - Point 3
 
 On behalf of the CouchDB PMC,
-%YOU%

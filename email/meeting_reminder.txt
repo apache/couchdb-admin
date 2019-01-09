@@ -1,11 +1,11 @@
 From: %YOU%
 To: dev@couchdb.apache.org
-Subject: [REMINDER] Weekly IRC meeting, %DATE% at 20:00 GMT
+Subject: [REMINDER] Weekly IRC meeting, %DATE% at 20:00 UTC
 ================================================================================
 
 Dear community,
 
-Please join our weekly IRC meeting, %DATE% at 20:00 GMT.
+Please join our weekly IRC meeting, %DATE% at 20:00 UTC.
 
 Everyone is welcome to attend this meeting.
 

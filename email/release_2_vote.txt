@@ -1,6 +1,6 @@
 From: %YOU%
 To: dev@couchdb.apache.org
-Subject: [DISCUSS] Release Apache CouchDB %VERSION%
+Subject: [VOTE] Release Apache CouchDB %VERSION%
 ================================================================================
 
 Dear community,

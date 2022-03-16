@@ -36,7 +36,7 @@ If you accept, since you already have an iCLA on file, the PMC will request an A
 [OTHERWISE, USE THIS SECTION]
 If you accept, the next step is to register an iCLA:
 
-  1. Details of the iCLA and the forms are found here: http://www.apache.org/licenses/#clas There is also an online form for generating your iCLA: https://asf.icla.online/
+  1. Details of the iCLA and the forms are found here: http://www.apache.org/licenses/#clas
 
   2. Instructions for its completion and return to the Secretary of the ASF are found at http://www.apache.org/licenses/#submitting . Do not submit ICLAs to anyone but secretary, but please do cc: [private@couchdb.apache.org]
 

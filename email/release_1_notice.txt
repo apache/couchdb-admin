@@ -19,7 +19,7 @@ The current release note draft is here:
 
     https://docs.couchdb.org/en/latest/whatsnew/#.#.html
 
-Please read this through and suggest any changes via PR against the apache/couchdb-documentation repository. The information was taken from the GitHub issue tracker and PR notes, and aims to be descriptive and useful to the average CouchDB user.
+Please read this through and suggest any changes via PR against the apache/couchdb repository, under src/docs. The information was taken from the GitHub issue tracker and PR notes, and aims to be descriptive and useful to the average CouchDB user.
 
 I will send out a follow-up reminder, with progress report, in one week.
 

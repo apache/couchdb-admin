@@ -28,7 +28,7 @@ After you have set a password, please login here:
 
 You are now ready to start with translating. To make the start a bit easier for you, we have created a Wiki page, where you can find useful information regarding your translation work:
 
-	https://wiki.apache.org/couchdb/Translation
+	https://cwiki.apache.org/confluence/display/COUCHDB/Translation+Guide
 
 If you have any questions, please don't wait to ask on the l10n@couchdb.apache.org mailing-list.
 

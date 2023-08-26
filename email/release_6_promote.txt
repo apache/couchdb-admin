@@ -25,8 +25,6 @@ And don't forget the rest:
 
 %LOBSTERS_URL%
 
-%GOOGLE_PLUS_URLS%
-
 %FACEBOOK_URL%
 
 Please take a moment to like/upvote these links and share them with your friends. Any help you can provide is here very valuable.

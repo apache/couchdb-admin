@@ -3,7 +3,7 @@ To: private@couchdb.apache.org
 Subject: [RESULT] (Was: Re: [VOTE] (Was: Re: [DISCUSS] Elect %NAME% as PMC member))
 ================================================================================
 
-Dear PMC, 
+Dear PMC,
 
 The vote has now closed.
 

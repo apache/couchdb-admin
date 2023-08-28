@@ -13,7 +13,7 @@ A successful election would signify that the PMC trusts this person to be loyal 
 
 Required reading:
 
-    http://couchdb.apache.org/bylaws.html#committers
+    https://couchdb.apache.org/bylaws.html#committers
 
 Per the bylaws, this vote uses the lazy majority approval model, meaning that three binding +1 votes and more binding +1 votes than -1 votes are needed.
 

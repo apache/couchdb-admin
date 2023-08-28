@@ -15,11 +15,11 @@ You will receive a few emails from various different people as this process move
 In response to this email, please indicate:
 
  * Your IRC nick (if you have one)
- * Your Twitter account (if you have one)
+ * Your Slack nick (if you have one)
 
 Please work your way through:
 
-    http://s.apache.org/couchdb-committer-first-steps
+    https://s.apache.org/couchdb-committer-first-steps
 
 This document contains:
 

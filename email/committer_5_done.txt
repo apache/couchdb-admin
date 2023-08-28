@@ -12,16 +12,15 @@ You now have write access to certain parts of the ASF.
 
 Don't forget to work your way through the steps here:
 
-    http://s.apache.org/couchdb-committer-first-steps
+    https://s.apache.org/couchdb-committer-first-steps
 
-While all of the items are important, we want to remind you of three specific
-ones that are key.
+While all of the items are important, we want to remind you of three specific ones that are key.
 
 We abide by a code of conduct and a set of bylaws. You should familiarise yourself with both documents. As a committer, people will look to you for cues about how to act. Please help us set the right standard.
 
-    http://couchdb.apache.org/conduct.html
+    https://couchdb.apache.org/conduct.html
 
-    http://couchdb.apache.org/bylaws.html
+    https://couchdb.apache.org/bylaws.html
 
 You will want to complete the Git / GitHub / ASF integration step for the best experience when committing to our repositories:
 

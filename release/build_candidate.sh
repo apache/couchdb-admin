@@ -90,7 +90,7 @@ EOF
 build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
-GIR_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
+GIT_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
 
 TMP_DIR=$tmp_dir
 
@@ -123,7 +123,7 @@ all: \$(TMP_DIR)/\$(PACKAGE).tar.gz
 	cd \$(GIT_DIR) && git show HEAD | head -n 1 | cut -d " " -f 2 > \$@
 
 \$(GIT_DIR):
-	git clone \$(GIR_URL) \$@
+	git clone \$(GIT_URL) \$@
 	cd \$(GIT_DIR) && git checkout -b \$(BRANCH) origin/\$(BRANCH)
 
 check: check-files

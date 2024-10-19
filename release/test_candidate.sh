@@ -73,4 +73,16 @@ make release
 
 echo 'adm = pass' >>  rel/couchdb/etc/local.ini
 
-./rel/couchdb/bin/couchdb && open http://127.0.0.1:5984/_utils/
+./rel/couchdb/bin/couchdb &
+dbpid=$!
+
+dburl=http://127.0.0.1:5984
+
+# stop the annoying errors
+until curl -u adm:pass $dburl/_users -X PUT; do 
+    sleep 5
+done
+
+open $dburl/_utils/
+
+log "kill $dbpid to stop CouchDB"

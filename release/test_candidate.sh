@@ -67,8 +67,6 @@ cd apache-couchdb-$version
 
 ./configure $config_opts
 
-exit 0
-
 make check
 
 make release

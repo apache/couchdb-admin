@@ -50,7 +50,7 @@ echo $tmp_dir
 build_file=$tmp_dir/build.mk
 
 cat > $build_file <<EOF
-GIR_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
+GIT_URL=https://git-wip-us.apache.org/repos/asf/couchdb.git
 
 SVN_DEV_URL=https://dist.apache.org/repos/dist/dev/couchdb
 
@@ -99,7 +99,7 @@ tag: \$(GIT_DIR)
 	    git push origin \$(VERSION)
 
 \$(GIT_DIR): check
-	git clone \$(GIR_URL) \$@
+	git clone \$(GIT_URL) \$@
 
 check: \$(ISH_FILE)
 	test "\`cat \$(RC_FILE)\`" = "rc.\$(CANDIDATE)/"

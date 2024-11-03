@@ -1,5 +1,5 @@
 From: %YOU%
-To: announce@apache.org, announce@couchdb.apache.org, user@couchdb.apache.org, dev@couchdb.apache.org, marketing@couchdb.apache.org
+To: announce@apache.org, announce@couchdb.apache.org, user@couchdb.apache.org, dev@couchdb.apache.org
 Subject: [ANNOUNCE] Apache CouchDB %VERSION% released
 =======================================================================
 
@@ -7,23 +7,11 @@ Dear community,
 
 Apache CouchDB® %VERSION% has been released and is available for download.
 
-Apache CouchDB® lets you access your data where you need it. The Couch Replication Protocol is implemented in a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
-
-Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary data for all your data storage needs.
-
-The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling offline-first user-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+CouchDB %VERSION% is a {feature|maintenance} release, and was originally published on YYYY-MM-DD.
 
     https://couchdb.apache.org/#download
 
-Pre-built packages for Windows, macOS, Debian/Ubuntu and RHEL/CentOS are available.
-
-CouchDB %VERSION% is a {feature|maintenance} release, and was originally published on YYYY-MM-DD.
-
-The community would like to thank all contributors for their part in making this release, from the smallest bug report or patch to major contributions in code, design, or marketing, we couldn’t have done it without you!
-
-See the official release notes document for an exhaustive list of all changes:
-
-    http://docs.couchdb.org/en/stable/whatsnew/%SHORTVERSION%.html
+Pre-built packages for Windows, macOS, Debian/Ubuntu and RHEL/CentOS, as well as Docker images are available.
 
 Release Notes highlights:
 
@@ -32,5 +20,17 @@ Release Notes highlights:
   - Point 2
 
   - Point 3
+
+See the official release notes document for an exhaustive list of all changes:
+
+    http://docs.couchdb.org/en/stable/whatsnew/%SHORTVERSION%.html
+
+Apache CouchDB® lets you access your data where you need it. The Couch Replication Protocol is implemented in a variety of projects and products that span every imaginable computing environment from globally distributed server-clusters, over mobile phones to web browsers.
+
+Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary data for all your data storage needs.
+
+The Couch Replication Protocol lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling offline-first user-experience while maintaining high performance and strong reliability. CouchDB comes with a developer-friendly query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+
+The community would like to thank all contributors for their part in making this release, from the smallest bug report or patch to major contributions in code, design, or marketing, we couldn’t have done it without you!
 
 On behalf of the CouchDB PMC,

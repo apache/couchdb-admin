@@ -55,7 +55,7 @@ elixir --version
 python --version
 java -version
 
-wget --no-parent --no-directories -r $artifact_url
+wget --no-parent --no-directories --page-requisites -e robots=off -r $artifact_url
 
 gpg --verify apache-couchdb-*.tar.gz.asc
 

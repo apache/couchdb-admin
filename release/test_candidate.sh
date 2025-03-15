@@ -43,7 +43,7 @@ else
     log "Creating temporary directory $tmp_dir"
 fi
 
-config_opts=${CONFIG_OPTS:-"--js-engine=quickjs --with-clouseau"}
+config_opts=${CONFIG_OPTS:-"--disable-spidermonkey --with-clouseau"}
 
 artifact_url=https://dist.apache.org/repos/dist/dev/couchdb/source/$version/rc$candidate/
 
